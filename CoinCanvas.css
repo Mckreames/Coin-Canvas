@@ -7,6 +7,9 @@
     --bitcoin-orange: #f7931a;
     --bitcoin-gray: #4d4d4d;
     --light-blue: #d3e2f2;
+    --electric-blue: #65def1;
+    --yellow-green: #8ac926;
+    --dogwood-rose: #d90368;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,8 +40,8 @@ section {
 }
 
 .hero {
-    /* margin: 4% 0; */
-    height: 600px;
+    margin-top: 150px;
+    min-height: 600px;
     background: linear-gradient(45deg, var(--light-blue) 10%, white 21%, white 89%, var(--bitcoin-orange) 99%);
     /* background: radial-gradient(white 96%, var(--bitcoin-orange) 99%); */
 }
@@ -57,7 +60,7 @@ section {
     height: 100%;
 }
 
-.idk-yet {
+.crypto-info {
     box-shadow: inset 0 10px 10px -10px var(--bitcoin-gray);
-    height: 400px;
+    min-height: 400px;
 }
