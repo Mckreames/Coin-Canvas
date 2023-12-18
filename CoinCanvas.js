@@ -3,8 +3,8 @@
 // Typing animation
 var type = new Typed(".auto-type", {
   strings: ["Fortune", "Confidence", "Success"],
-  typeSpeed: 100,
-  backSpeed: 100,
+  typeSpeed: 80,
+  backSpeed: 40,
   loop: true,
 });
 
