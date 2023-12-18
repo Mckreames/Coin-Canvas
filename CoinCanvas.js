@@ -1,5 +1,48 @@
 `use strict`;
 
+// Typing animation
+var type = new Typed(".auto-type", {
+  strings: ["Fortune", "Confidence", "Success"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  loop: true,
+});
+
+// Modal Window
+const modal = document.querySelector(".modal");
+const overlay = document.querySelector(".overlay");
+const btnClosedModal = document.querySelector(".close-modal");
+const btnsOpenModal = document.querySelectorAll(".show-modal");
+console.log(btnsOpenModal);
+
+const openModal = function () {
+  console.log("open Modal called");
+  modal.classList.remove(`hidden`);
+  overlay.classList.remove(`hidden`);
+};
+
+const closeModal = function () {
+  console.log("close Modal called");
+  modal.classList.add(`hidden`);
+  overlay.classList.add(`hidden`);
+};
+
+for (let i = 0; i < btnsOpenModal.length; i++) {
+  btnsOpenModal[i].addEventListener(`click`, openModal);
+  //   modal.style.display = `block`;
+}
+
+btnClosedModal.addEventListener(`click`, closeModal);
+overlay.addEventListener(`click`, closeModal);
+
+document.addEventListener(`keydown`, function (e) {
+  console.log(e.key);
+
+  if (e.key === `Escape` && !modal.classList.contains(`hidden`)) {
+    closeModal();
+  }
+});
+
 // PyGraph API AND Key From RapidAPI.com via GraphQL
 const url = "https://fygraph.p.rapidapi.com/graphql";
 const options = {
@@ -74,106 +117,5 @@ async function fetchData() {
   }
 }
 
-fetchData();
-// setInterval(fetchData, 1000);
-
-// const url = "https://fygraph.p.rapidapi.com/graphql";
-// const options = {
-//   method: "POST",
-//   headers: {
-//     "x-rapidapi-key": "fa40ea65a6msha68e6f5343e548dp10595ajsn6d26736be691",
-//     "x-rapidapi-host": "fygraph.p.rapidapi.com",
-//     "Content-Type": "application/json",
-//   },
-//   body: JSON.stringify({
-//     query: `query {
-//         getCryptoLatest {
-//             code
-//             marketCap
-//             name
-//             rank
-//             volume
-//             rate}}`,
-//   }),
-// };
-
-// async function fetchData() {
-//   try {
-//     const response = await fetch(url, options);
-//     const result = await response.json();
-
-//     if (result.errors) {
-//       console.error("GraphQL Errors:", result.errors);
-//     } else {
-//       //   displayData(result);
-//     }
-
-//     console.log(result);
-//   } catch (error) {
-//     console.error(error);
-//   }
-// }
-
-// const ctx = document.getElementById("myChart");
-
-// new Chart(ctx, {
-//   type: "bar",
-//   data: {
-//     labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-//     datasets: [
-//       {
-//         label: "# of Votes",
-//         data: [12, 19, 3, 5, 2, 3],
-//         borderWidth: 1,
-//       },
-//     ],
-//   },
-//   options: {
-//     scales: {
-//       y: {
-//         beginAtZero: true,
-//       },
-//     },
-//   },
-// });
-
-// BitCoin Tools API
-
-// (function (b, i, t, C, O, I, N) {
-//   window.addEventListener(
-//     "load",
-//     function () {
-//       if (b.getElementById(C)) return;
-//       (I = b.createElement(i)), (N = b.getElementsByTagName(i)[0]);
-//       I.src = t;
-//       I.id = C;
-//       N.parentNode.insertBefore(I, N);
-//     },
-//     false
-//   );
-// })(document, "script", "https://widgets.bitcoin.com/widget.js", "btcwdgt");
-
-// Widgets from CryptoCompare.com
-
-// function displayData(data) {
-//   console.log(data);
-//   const cryptoInfoSection = document.querySelector(".crypto-info");
-//   const cryptoData = data.data.getCryptoLatest;
-
-//   const htmlContent = cryptoData
-//     .map(
-//       (item) => `
-//             <div>
-//                 <p>Name: ${item.name}</p>
-//                 <p>Code: ${item.code}</p>
-//                 <p>Rank: ${item.rank}</p>
-//                 <p>Market Cap: ${item.marketCap}</p>
-//             </div>
-//             `
-//     )
-//     .join("");
-
-//   cryptoInfoSection.innerHTML = htmlContent;
-// }
-
 // fetchData();
+// setInterval(fetchData, 1000);

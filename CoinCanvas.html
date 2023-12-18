@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,10 +41,12 @@
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#top">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Latest Crypto</a>
+                <a class="nav-link" href="./HTML/latest_crypto.html"
+                  >Latest Crypto</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Latest Fiat</a>
@@ -57,7 +59,6 @@
                   >Portfolio</a
                 >
               </li>
-
             </ul>
           </div>
           <form class="d-flex" role="search">
@@ -89,7 +90,7 @@
             cryptocurrency market with confidence, turning every trade into a
             masterpiece of strategic investment.
           </p>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary show-modal">
             Sign Up For Free!
           </button>
         </div>
@@ -97,11 +98,27 @@
           <img
             src="Images/Croods - Chart.png"
             alt="An Abstract Chart"
-            class="img-fluid"
+            class="img-fluid img-background-right"
           />
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <h1>I'm a modal window</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="overlay hidden"></div>
 
     <!-- Welcome -->
     <section class="container-fluid welcome">
@@ -110,15 +127,16 @@
           <img
             src="Images/Allura - Feedback Session.png"
             alt="An Abstract Chart"
-            class="img-fluid"
+            class="img-fluid img-background-left"
           />
         </div>
         <div class="offset-2 col-xxl-4 hero-text-div">
-          <h2 class="display-4">
-            Welcome!
-          </h2>
+          <h2 class="display-4">Welcome!</h2>
           <p class="lead">
-            Coin Canvas is the most innovative and easy to use crypto trading and storage market around! Elevate your trading experience as every transaction becomes a brushstroke, shaping your path to wealth and prosperity.
+            Coin Canvas is the most innovative and easy to use crypto trading
+            and storage market around! Elevate your trading experience as every
+            transaction becomes a brushstroke, shaping your path to wealth and
+            prosperity.
           </p>
         </div>
       </div>
@@ -128,22 +146,20 @@
     <section class="container-fluid img-right">
       <div class="row hero-text-container d-flex align-items-center">
         <div class="offset-2 col-xxl-4 text-div">
-          <h2 class="display-4">
-            Benefits
-          </h2>
+          <h2 class="display-4">Benefits</h2>
           <p class="lead">
             Immerse yourself in the world of financial growth with Coin Canvas,
-          offering not just a platform, but a dynamic ecosystem. Benefit from
-          real-time market insights, secure transactions, and a user-friendly
-          interface, providing you with the tools to trade with confidence and
-          amplify your returns.
+            offering not just a platform, but a dynamic ecosystem. Benefit from
+            real-time market insights, secure transactions, and a user-friendly
+            interface, providing you with the tools to trade with confidence and
+            amplify your returns.
           </p>
         </div>
         <div class="offset-1 col-xxl-4">
           <img
             src="Images/Allura - Stats Graph.png"
             alt="An Abstract Chart"
-            class="img-fluid"
+            class="img-fluid img-background-right"
           />
         </div>
       </div>
@@ -156,18 +172,17 @@
           <img
             src="Images/Stuck at Home - To Do List.png"
             alt="An Abstract Chart"
-            class="img-fluid"
+            class="img-fluid img-background-left"
           />
         </div>
         <div class="offset-2 col-xxl-4 text-div">
-          <h2 class="display-4">
-            Why Choose Us?
-          </h2>
+          <h2 class="display-4">Why Choose Us?</h2>
           <p class="lead">
             Choose Coin Canvas for a trustworthy and reliable exchange platform
-          that goes beyond transactions. Our 24/7 customer support ensures peace
-          of mind, while seamless transactions and a global reach make us the
-          go-to platform for investors seeking both security and success.
+            that goes beyond transactions. Our 24/7 customer support ensures
+            peace of mind, while seamless transactions and a global reach make
+            us the go-to platform for investors seeking both security and
+            success.
           </p>
         </div>
       </div>
@@ -177,279 +192,201 @@
     <section class="container-fluid img-right">
       <div class="row hero-text-container d-flex align-items-center">
         <div class="offset-2 col-xxl-4 text-div">
-          <h2 class="header display-4">
-            Join Our Community!
-          </h2>
+          <h2 class="header display-4">Join Our Community!</h2>
           <p class="text lead">
             Become part of our thriving community where success stories unfold
-          daily. Explore how investors, much like yourself, have sculpted their
-          financial destinies with Coin Canvas. Your unique success story
-          awaits, just a trade away.
+            daily. Explore how investors, much like yourself, have sculpted
+            their financial destinies with Coin Canvas. Your unique success
+            story awaits, just a trade away.
           </p>
         </div>
         <div class="offset-1 col-xxl-4">
           <img
             src="Images/Croods - Windows.png"
             alt="An Abstract Chart"
-            class="img-fluid"
+            class="img-fluid img-background-right"
           />
         </div>
       </div>
     </section>
 
     <!-- Get Started -->
-    <section class="container-fluid img-left">
+    <section class="container-fluid last-home-sect">
       <div class="row text-container d-flex align-items-center">
+        <div class="offset-1 col-xxl-4">
+          <img
+            src="Images/Stuck at Home - Brainstorming.png"
+            alt="An Abstract Chart"
+            class="img-fluid img-background-left"
+          />
+        </div>
         <div class="offset-2 col-xxl-4 text-div">
-          <h2 class="header display-4">
-            Get Started!
-          </h2>
+          <h2 class="header display-4">Get Started!</h2>
           <p class="text lead">
             Initiate your journey to financial freedom today by joining Coin
-          Canvas. Sign up for free and explore the endless possibilities that
-          await you. Trade with confidence, trade with Coin Canvas, and sculpt a
-          future that reflects your financial aspirations.
+            Canvas. Sign up for free and explore the endless possibilities that
+            await you. Trade with confidence, trade with Coin Canvas, and sculpt
+            a future that reflects your financial aspirations.
           </p>
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary show-modal">
             Sign Up For Free!
           </button>
         </div>
-        <div class="offset-1 col-xxl-4">
-          <img
-            src="Images/Croods - Chart.png"
-            alt="An Abstract Chart"
-            class="img-fluid"
-          />
+      </div>
+    </section>
+
+    <img src="Images/wave-haikei.svg" class="transition-img" />
+
+    <section class="newsletter-sect">
+      <!-- 
+        blockchain bites
+        Markets Daily
+        Institutional Crypto
+       -->
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-md-6">
+            <section>
+              <form class="newsletter">
+                <fieldset>
+                  <label class="newsletter-header"
+                    >Sign Up for our Newsletter!</label
+                  >
+                  <div class="mb-3 email-sect">
+                    <label
+                      for="disabledTextInput"
+                      class="form-label newsletter-text"
+                      >Email</label
+                    >
+                    <input
+                      type="text"
+                      id="disabledTextInput"
+                      class="form-control"
+                      placeholder="input"
+                    />
+                  </div>
+                  <div class="mb-3 options-sect">
+                    <label
+                      for="disabledSelect"
+                      class="form-label newsletter-text"
+                      >How often would you like to be notified?</label
+                    >
+                    <select id="disabledSelect" class="form-select">
+                      <option>select</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="disabledFieldsetCheck"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="disabledFieldsetCheck"
+                        >I have read the <a href="#">Terms of Service</a></label
+                      >
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary newsletter-btn">
+                    Submit
+                  </button>
+                </fieldset>
+              </form>
+            </section>
+          </div>
+          <div class="offset-2 col-md-4">
+            <img src="Images/Stuck at Home - Mailing List.png" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="crypto-info">
+    <footer>
+      <p>All Rights Reserved</p>
+    </footer>
+
+    <!-- <section class="crypto-info">
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-12 crypto-list crypto1" id="bitcoin">
-            <p>Date: 2023-11-29T18:10:38.759Z
-
-              | Code: VSYS
-              
-              | Rank: 713
-              
-              | Market Cap: 3252653
-              
-              | Volume: 1068071
-              
-              | Rate: 0.001087202844361036
-              
-              | Delta (Day): 0.9495</p>
+            <p>
+              Date: 2023-11-29T18:10:38.759Z | Code: VSYS | Rank: 713 | Market
+              Cap: 3252653 | Volume: 1068071 | Rate: 0.001087202844361036 |
+              Delta (Day): 0.9495
+            </p>
           </div>
           <div class="col-12 crypto-list crypto2" id="ethereum">
-            <p>Date: 2023-11-29T18:10:38.759Z
-
-              | Code: POLK
-              
-              | Rank: 704
-              
-              | Market Cap: 3526057
-              
-              | Volume: 49967
-              
-              | Rate: 0.03526056795018399
-              
-              | Delta (Day): 0.9894</p>
+            <p>
+              Date: 2023-11-29T18:10:38.759Z | Code: POLK | Rank: 704 | Market
+              Cap: 3526057 | Volume: 49967 | Rate: 0.03526056795018399 | Delta
+              (Day): 0.9894
+            </p>
           </div>
           <div class="col-12 crypto-list crypto3" id="tether">
-            <p>Date: 2023-11-29T18:10:38.759Z
-
-              | Code: MTH
-              
-              | Rank: 731
-              
-              | Market Cap: 2834138
-              
-              | Volume: 272120
-              
-              | Rate: 0.007043085901915814
-              
-              | Delta (Day): 1.0579</p>
+            <p>
+              Date: 2023-11-29T18:10:38.759Z | Code: MTH | Rank: 731 | Market
+              Cap: 2834138 | Volume: 272120 | Rate: 0.007043085901915814 | Delta
+              (Day): 1.0579
+            </p>
           </div>
           <div class="col-12 crypto-list crypto4" id="binance-coin">
-            <p>Date: 2023-11-29T18:10:38.759Z
-
-              | Code: QSP
-              
-              | Rank: 715
-              
-              | Market Cap: 3146700
-              
-              | Volume: 49316
-              
-              | Rate: 0.004408365193099034
-              
-              | Delta (Day): 1.0117</p>
+            <p>
+              Date: 2023-11-29T18:10:38.759Z | Code: QSP | Rank: 715 | Market
+              Cap: 3146700 | Volume: 49316 | Rate: 0.004408365193099034 | Delta
+              (Day): 1.0117
+            </p>
           </div>
           <div class="col-12 crypto-list crypto5" id="xrp">
-            <p>Date: 2023-11-29T18:10:38.759Z
-
-              | Code: HBB
-              
-              | Rank: 693
-              
-              | Market Cap: 3764439
-              
-              | Volume: 526402
-              
-              | Rate: 0.07111872349235432
-              
-              | Delta (Day): 1.0779</p>
+            <p>
+              Date: 2023-11-29T18:10:38.759Z | Code: HBB | Rank: 693 | Market
+              Cap: 3764439 | Volume: 526402 | Rate: 0.07111872349235432 | Delta
+              (Day): 1.0779
+            </p>
           </div>
           <div class="col-12 crypto-list crypto6" id="solana">
-            <p>Date: 2023-11-29T18:10:38.759Z
-
-              | Code: CTI
-              
-              | Rank: 654
-              
-              | Market Cap: 5146265
-              
-              | Volume: 1896774
-              
-              | Rate: 0.02689987801967763
-              
-              | Delta (Day): 0.9609</p>
+            <p>
+              Date: 2023-11-29T18:10:38.759Z | Code: CTI | Rank: 654 | Market
+              Cap: 5146265 | Volume: 1896774 | Rate: 0.02689987801967763 | Delta
+              (Day): 0.9609
+            </p>
           </div>
           <div class="col-12 crypto-list crypto7" id="usd-coin">
-            <p>Date: 2023-11-27T11:54:01.425Z
-
-              | Code: VIDYA
-              
-              | Rank: 1161
-              
-              | Market Cap: 2948812
-              
-              | Volume: 383
-              
-              | Rate: 0.0683259816209322
-              
-              | Delta (Day): 0.969</p>
+            <p>
+              Date: 2023-11-27T11:54:01.425Z | Code: VIDYA | Rank: 1161 | Market
+              Cap: 2948812 | Volume: 383 | Rate: 0.0683259816209322 | Delta
+              (Day): 0.969
+            </p>
           </div>
           <div class="col-12 crypto-list crypto8" id="ripple">
-            <p>Date: 2023-11-27T11:54:01.425Z
-
-              | Code: DEFIT
-              
-              | Rank: 1157
-              
-              | Market Cap: 3203731
-              
-              | Volume: 2356
-              
-              | Rate: 0.09134831007166214
-              
-              | Delta (Day): 0.9527</p>
+            <p>
+              Date: 2023-11-27T11:54:01.425Z | Code: DEFIT | Rank: 1157 | Market
+              Cap: 3203731 | Volume: 2356 | Rate: 0.09134831007166214 | Delta
+              (Day): 0.9527
+            </p>
           </div>
           <div class="col-12 crypto-list crypto9" id="cardano">
-            <p>Date: 2023-11-29T18:10:38.759Z
-
-              | Code: AVA
-              
-              | Rank: 726
-              
-              | Market Cap: 2872180
-              
-              | Volume: 1108424
-              
-              | Rate: 0.5411230039227884
-              
-              | Delta (Day): 1.0029</p>
+            <p>
+              Date: 2023-11-29T18:10:38.759Z | Code: AVA | Rank: 726 | Market
+              Cap: 2872180 | Volume: 1108424 | Rate: 0.5411230039227884 | Delta
+              (Day): 1.0029
+            </p>
           </div>
           <div class="col-12 crypto-list crypto10" id="avalanche">
-            <p>Date: 2023-11-29T18:10:38.759Z
-
-              | Code: XRT
-              
-              | Rank: 714
-              
-              | Market Cap: 3195654
-              
-              | Volume: 9689
-              
-              | Rate: 2.443616640452092
-              
-              | Delta (Day): 0.9154</p>
+            <p>
+              Date: 2023-11-29T18:10:38.759Z | Code: XRT | Rank: 714 | Market
+              Cap: 3195654 | Volume: 9689 | Rate: 2.443616640452092 | Delta
+              (Day): 0.9154
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="CoinCanvas.js"></script>
   </body>
 </html>
-
-
-
-<!-- Alternating section code -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Include necessary meta tags, stylesheets, and scripts here -->
-</head>
-<body>
-
-<!-- Hero Section -->
-<!-- <section class="container-fluid hero">
-    <div class="row hero-text-container d-flex align-items-center">
-        <div class="offset-2 col-xxl-4 hero-text-div">
-            <h1 class="hero-header display-4">
-                Leave Your Mark. Grow Your Fortune!
-            </h1>
-            <p class="hero-text lead">
-                Welcome to Coin Canvas, where the brushstrokes of blockchain innovation meet the canvas of your financial success. Navigate the cryptocurrency market with confidence, turning every trade into a masterpiece of strategic investment.
-            </p>
-        </div>
-        <div class="offset-1 col-xxl-4">
-            <img src="Images/Croods - Chart.png" alt="An Abstract Chart" class="img-fluid"/>
-        </div>
-    </div>
-</section> -->
-
-<!-- Section 2 -->
-<!-- <section class="container-fluid hero">
-    <div class="row hero-text-container d-flex align-items-center">
-        <div class="offset-1 col-xxl-4 order-xxl-2 hero-text-div">
-            <h1 class="hero-header display-4">
-                Another Section Title Here
-            </h1>
-            <p class="hero-text lead">
-                Some text describing this section. It could talk about the benefits of your platform or any other relevant information.
-            </p>
-        </div>
-        <div class="offset-1 col-xxl-4 order-xxl-1">
-            <img src="Images/Another-Image.png" alt="Another Image" class="img-fluid"/>
-        </div>
-    </div>
-</section> -->
-
-<!-- Section 3 (Same as Hero) -->
-<!-- <section class="container-fluid hero">
-    <div class="row hero-text-container d-flex align-items-center">
-        <div class="offset-2 col-xxl-4 hero-text-div">
-            <h1 class="hero-header display-4">
-                Section 3 Title Here
-            </h1>
-            <p class="hero-text lead">
-                Text for the third section. You can customize this content as needed.
-            </p>
-        </div>
-        <div class="offset-1 col-xxl-4">
-            <img src="Images/Third-Image.png" alt="Third Image" class="img-fluid"/>
-        </div>
-    </div>
-</section> -->
-
-<!-- Repeat the pattern for additional sections -->
-
-<!-- </body>
-</html> --> -->
