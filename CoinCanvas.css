@@ -105,7 +105,7 @@ section {
 }
 
 .hero-header {
-    font-size: 53px;
+    font-size: 50px;
 }
 
 .hero-text {
@@ -237,7 +237,8 @@ label {
 
 .newsletter-btn {
     background-color: white;
-    color: var();
+    color: var(--bitcoin-gray);
+    font-weight: bold;
 }
 
 footer {
