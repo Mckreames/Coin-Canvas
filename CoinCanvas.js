@@ -1,7 +1,7 @@
 `use strict`;
 
 // Typing animation
-var type = new Typed(".auto-type", {
+const type = new Typed(".auto-type", {
   strings: ["Fortune", "Confidence", "Success", "Investments"],
   typeSpeed: 80,
   backSpeed: 40,
