@@ -245,13 +245,15 @@ footer {
 .crypto-list {
     display: flex;
     align-items: center;
-    min-height: 100px;
+    min-height: 400px;
     font-weight: bold;
     font-size: 18px;
-    box-shadow: 5px 5px 10px var(--bitcoin-gray);
+    /* box-shadow: 5px 5px 10px var(--bitcoin-gray); */
+    border: 1px solid black;
     border-radius: 10px;
     margin: 10px 0;
-    background: linear-gradient(90deg, rgb(245, 234, 220), white, rgb(245, 234, 220))
+    padding: 10px;
+    /* background: linear-gradient(90deg, rgb(245, 234, 220), white, rgb(245, 234, 220)) */
 }
 
 .bitcoin {
