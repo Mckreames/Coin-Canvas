@@ -1,12 +1,12 @@
 `use strict`;
 
 // Typing animation
-// const type = new Type(".auto-type", {
-//   strings: ["Fortune", "Confidence", "Success", "Investments"],
-//   typeSpeed: 80,
-//   backSpeed: 40,
-//   loop: true,
-// });
+const type = new Type(".auto-type", {
+  strings: ["Fortune", "Confidence", "Success", "Investments"],
+  typeSpeed: 80,
+  backSpeed: 40,
+  loop: true,
+});
 
 // Modal Window
 const modal = document.querySelector(".modal");
@@ -94,13 +94,13 @@ async function fetchData() {
       if (cryptoInfo) {
         // Construct the content using the data
         const content = `
-            <p>Date: ${cryptoInfo.date} |
-            Code: ${cryptoInfo.code} |
-            Rank: ${cryptoInfo.rank} |
-            Market Cap: ${cryptoInfo.marketCap} |
-            Volume: ${cryptoInfo.volume} |
-            Rate: ${cryptoInfo.rate} |
-            Delta (Day): ${cryptoInfo.delta.day}</p>
+            <p>Date: ${cryptoInfo.date} </p>
+            <p>Code: ${cryptoInfo.code} </p>
+            <p>Rank: ${cryptoInfo.rank} </p>
+            <p>Market Cap: ${cryptoInfo.marketCap} </p>
+            <p>Volume: ${cryptoInfo.volume} </p>
+            <p>Rate: ${cryptoInfo.rate} </p>
+            <p>Delta (Day): ${cryptoInfo.delta.day}</p>
             <!-- Add more fields as needed -->
           `;
 
@@ -139,6 +139,30 @@ var cccTheme = {
   s.type = "text/javascript";
   s.async = true;
   var theUrl = baseUrl + "serve/v1/coin/chart?fsym=BTC&tsym=USD";
+  s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+  embedder.parentNode.appendChild(s);
+})();
+
+// Ethereum
+
+baseUrl = "https://widgets.cryptocompare.com/";
+var ethereum = document.querySelector(".ethereum");
+var embedder = ethereum[ethereum.length - 1];
+var cccTheme = {
+  General: { background: "white", borderColor: "#d3e2f2" },
+  Header: { background: "#d3e2f2", displayFollowers: false },
+  Data: { priceColor: "#f7931a" },
+  Chart: { animation: true, fillColor: "#ffc681", borderColor: "#f7931a" },
+};
+(function () {
+  var appName = encodeURIComponent(window.location.hostname);
+  if (appName == "") {
+    appName = "local";
+  }
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.async = true;
+  var theUrl = baseUrl + "serve/v1/coin/chart?fsym=ETH&tsym=USD";
   s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
   embedder.parentNode.appendChild(s);
 })();

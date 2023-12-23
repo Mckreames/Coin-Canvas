@@ -242,20 +242,44 @@ footer {
     margin-top: 200px; 
 }
 
+.container {
+    /* background: linear-gradient(var(--light-blue), var(--bitcoin-orange)); */
+    /* background: linear-gradient(white, #d3e2f2b6) */
+    background: radial-gradient(#d3e2f2b6, white);
+    border-radius: 10px;
+
+}
+
 .crypto-list {
     display: flex;
     align-items: center;
-    min-height: 400px;
+    min-height: 300px;
     font-weight: bold;
     font-size: 18px;
     /* box-shadow: 5px 5px 10px var(--bitcoin-gray); */
-    border: 1px solid black;
+    border-left: 3px solid var(--bitcoin-gray);
     border-radius: 10px;
     margin: 10px 0;
     padding: 10px;
     /* background: linear-gradient(90deg, rgb(245, 234, 220), white, rgb(245, 234, 220)) */
 }
 
+.stats {
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+    border-right: 3px solid var(--bitcoin-gray);
+    border-radius: 10px;
+}
+
+.stats p {
+
+}
+
+.graph {
+
+}
+
 .bitcoin {
-    margin
+    /* margin: 10px; */
 }
