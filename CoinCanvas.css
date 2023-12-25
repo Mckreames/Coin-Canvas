@@ -19,6 +19,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+#active-tab {
+    color: var(--bitcoin-orange) !important;
+}
+
+#active-tab:hover {
+    color: var(--bitcoin-light-orange) !important;
+}
+
 .hidden {
     display: none;
 }
@@ -280,7 +288,34 @@ footer {
 /*  */
 /* Pricing Page */
 
+.tier-list {
+    margin-top: 170px;
+    text-align: center;
+}
+
+.price-header {
+    padding-top: 60px;
+}
+
+.price-sect {
+    margin-top: 80px;
+}
+
 .tier {
-    min-height: 500px;
+    margin: 45px;
+    padding: 2% 5%;
+    min-height: 600px;
+    border-radius: 50px;
     border: 5px solid black;
+    text-align: center;
+    background: linear-gradient(var(--bitcoin-orange) 24%, white 25%);
+
+}
+
+.tier > h2 {
+    color: white;
+}
+
+.tier > h3 {
+    color: var(--bitcoin-gray);
 }
