@@ -275,14 +275,12 @@ footer {
     border-radius: 10px;
 }
 
-.stats p {
 
-}
+/*  */
+/*  */
+/* Pricing Page */
 
-.graph {
-
-}
-
-.bitcoin {
-    /* margin: 10px; */
+.tier {
+    min-height: 500px;
+    border: 5px solid black;
 }
