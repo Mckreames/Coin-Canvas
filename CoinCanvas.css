@@ -239,14 +239,18 @@ footer {
 /* Latest Crypto HTML */
 
 .crypto-info {
-    margin-top: 200px; 
+    margin-top: 170px; 
+    padding-top: 30px;
+    /* background: linear-gradient(white, var(--light-blue), white, rgba(255, 166, 0, 0.144)) */
+    background: linear-gradient(45deg, var(--light-blue), white, white, var(--bitcoin-orange));
 }
 
 .container {
     /* background: linear-gradient(var(--light-blue), var(--bitcoin-orange)); */
-    /* background: linear-gradient(white, #d3e2f2b6) */
-    background: radial-gradient(#d3e2f2b6, white);
+    /* background: radial-gradient(rgba(253, 169, 2, 0.089), white); */
+    /* background: radial-gradient(#d3e2f2b6, white); */
     border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.527);
 
 }
 
@@ -261,7 +265,6 @@ footer {
     border-radius: 10px;
     margin: 10px 0;
     padding: 10px;
-    /* background: linear-gradient(90deg, rgb(245, 234, 220), white, rgb(245, 234, 220)) */
 }
 
 .stats {

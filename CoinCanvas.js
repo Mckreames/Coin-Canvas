@@ -1,13 +1,5 @@
 `use strict`;
 
-// Typing animation
-const type = new Type(".auto-type", {
-  strings: ["Fortune", "Confidence", "Success", "Investments"],
-  typeSpeed: 80,
-  backSpeed: 40,
-  loop: true,
-});
-
 // Modal Window
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
@@ -100,8 +92,7 @@ async function fetchData() {
             <p>Market Cap: ${cryptoInfo.marketCap} </p>
             <p>Volume: ${cryptoInfo.volume} </p>
             <p>Rate: ${cryptoInfo.rate} </p>
-            <p>Delta (Day): ${cryptoInfo.delta.day}</p>
-            <!-- Add more fields as needed -->
+            <p>Delta (Day): ${cryptoInfo.delta.hour}</p>
           `;
 
         // Update the content of the crypto div
@@ -117,52 +108,121 @@ async function fetchData() {
   }
 }
 
-// fetchData();
+fetchData();
 // setInterval(fetchData, 1000);
 
-baseUrl = "https://widgets.cryptocompare.com/";
-var bitcoin = document.querySelector(".bitcoin");
-var embedder = bitcoin;
-var cccTheme = {
-  Header: { background: "#d3e2f2", displayFollowers: false },
-  Followers: { color: "#f7931a" },
-  Data: { priceColor: "#f7931a" },
-  Chart: { animation: true, fillColor: "#ffc681", borderColor: "#f7931a" },
-  Trend: { colorUnchanged: "#f7931a" },
-};
-(function () {
-  var appName = encodeURIComponent(window.location.hostname);
-  if (appName == "") {
-    appName = "local";
-  }
-  var s = document.createElement("script");
-  s.type = "text/javascript";
-  s.async = true;
-  var theUrl = baseUrl + "serve/v1/coin/chart?fsym=BTC&tsym=USD";
-  s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-  embedder.parentNode.appendChild(s);
-})();
+// baseUrl = "https://widgets.cryptocompare.com/";
+// var bitcoin = document.querySelector(".bitcoin");
+// var embedder = bitcoin;
+// var cccTheme = {
+//   Header: { background: "#d3e2f2", displayFollowers: false },
+//   Followers: { color: "#f7931a" },
+//   Data: { priceColor: "#f7931a" },
+//   Chart: { animation: true, fillColor: "#ffc681", borderColor: "#f7931a" },
+//   Trend: { colorUnchanged: "#f7931a" },
+// };
+// (function () {
+//   var appName = encodeURIComponent(window.location.hostname);
+//   if (appName == "") {
+//     appName = "local";
+//   }
+//   var s = document.createElement("script");
+//   s.type = "text/javascript";
+//   s.async = true;
+//   var theUrl = baseUrl + "serve/v1/coin/chart?fsym=BTC&tsym=USD";
+//   s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+//   embedder.parentNode.appendChild(s);
+// })();
+
+function crypData(symbol, embedderClass) {
+  var baseUrl = "https://widgets.cryptocompare.com/";
+  var embedder = document.querySelector(embedderClass);
+  var cccTheme = {
+    General: {
+      background: "white",
+      borderColor: "#d3e2f2",
+    },
+    Header: {
+      background: "#d3e2f2",
+      displayFollowers: false,
+    },
+    Data: {
+      priceColor: "#f7931a",
+    },
+    Chart: {
+      animation: true,
+      fillColor: "#ffc681",
+      borderColor: "#f7931a",
+    },
+  };
+
+  (function () {
+    var appName = encodeURIComponent(window.location.hostname);
+    if (appName == "") {
+      appName = "local";
+    }
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    var theUrl = baseUrl + "serve/v1/coin/chart?fsym=" + symbol + "&tsym=USD";
+
+    theUrl += "&cccTheme=" + encodeURIComponent(JSON.stringify(cccTheme));
+
+    s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+    embedder.parentNode.appendChild(s);
+  })();
+}
+
+// Bitcoin
+crypData("BTC", ".bitcoin");
+
+// Ethereum
+crypData("ETH", ".ethereum");
+
+// Tether
+crypData("USDT", ".tether");
+
+// Binance Coin
+crypData("BNB", ".binance-coin");
+
+// XRP
+crypData("XRP", ".xrp");
+
+// Solana
+crypData("SOL", ".solana");
+
+// USD Coin
+crypData("USDC", ".usd-coin");
+
+// Ripple
+crypData("XRP", ".ripple");
+
+// Cardano
+crypData("ADA", ".cardano");
+
+// Avalanche
+crypData("AVAX", ".avalanche");
 
 // Ethereum
 
-baseUrl = "https://widgets.cryptocompare.com/";
-var ethereum = document.querySelector(".ethereum");
-var embedder = ethereum[ethereum.length - 1];
-var cccTheme = {
-  General: { background: "white", borderColor: "#d3e2f2" },
-  Header: { background: "#d3e2f2", displayFollowers: false },
-  Data: { priceColor: "#f7931a" },
-  Chart: { animation: true, fillColor: "#ffc681", borderColor: "#f7931a" },
-};
-(function () {
-  var appName = encodeURIComponent(window.location.hostname);
-  if (appName == "") {
-    appName = "local";
-  }
-  var s = document.createElement("script");
-  s.type = "text/javascript";
-  s.async = true;
-  var theUrl = baseUrl + "serve/v1/coin/chart?fsym=ETH&tsym=USD";
-  s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-  embedder.parentNode.appendChild(s);
-})();
+// baseUrl = "https://widgets.cryptocompare.com/";
+// var ethereum = document.querySelector(".ethereum");
+// var embedder = ethereum[ethereum.length - 1];
+// var cccTheme = {
+//   General: { background: "white", borderColor: "#d3e2f2" },
+//   Header: { background: "#d3e2f2", displayFollowers: false },
+//   Data: { priceColor: "#f7931a" },
+//   Chart: { animation: true, fillColor: "#ffc681", borderColor: "#f7931a" },
+// };
+// (function () {
+//   var appName = encodeURIComponent(window.location.hostname);
+//   if (appName == "") {
+//     appName = "local";
+//   }
+//   var s = document.createElement("script");
+//   s.type = "text/javascript";
+//   s.async = true;
+//   var theUrl = baseUrl + "serve/v1/coin/chart?fsym=ETH&tsym=USD";
+//   s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+//   embedder.parentNode.appendChild(s);
+// })();
