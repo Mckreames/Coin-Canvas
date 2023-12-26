@@ -258,8 +258,9 @@ footer {
 .crypto-info {
     margin-top: 170px; 
     padding-top: 30px;
+    background: linear-gradient(var(--bitcoin-orange), white);
     /* background: linear-gradient(white, var(--light-blue), white, rgba(255, 166, 0, 0.144)) */
-    background: linear-gradient(45deg, var(--light-blue), white, white, var(--bitcoin-orange));
+    /* background: linear-gradient(45deg, var(--light-blue), white, white, var(--bitcoin-orange)); */
 }
 
 .container {
@@ -267,7 +268,7 @@ footer {
     /* background: radial-gradient(rgba(253, 169, 2, 0.089), white); */
     /* background: radial-gradient(#d3e2f2b6, white); */
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.527);
+    /* background-color: rgba(255, 255, 255, 0.527); */
 
 }
 
@@ -282,6 +283,14 @@ footer {
     border-radius: 10px;
     margin: 10px 0;
     padding: 10px;
+}
+
+.space-left {
+    margin-left: 10px;
+}
+
+.space-right {
+    margin-right: 10px;
 }
 
 .stats {
