@@ -204,6 +204,11 @@ img {
     background: linear-gradient(var(--bitcoin-orange), rgb(14, 13, 13));
 }
 
+.newsletter-img-sect {
+    background: transparent !important;
+    /* background-color:  */
+}
+
 .newsletter {
     border: 10px double white; 
     padding: 10%;
