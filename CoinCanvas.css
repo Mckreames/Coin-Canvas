@@ -305,6 +305,9 @@ footer {
 
 .price-header {
     padding-top: 60px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 8px;
 }
 
 .price-sect {
@@ -325,6 +328,7 @@ footer {
 
 .tier > h2 {
     color: white;
+    font-weight: bold;
 }
 
 .tier > h3 {
