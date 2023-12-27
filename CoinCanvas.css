@@ -260,7 +260,8 @@ footer {
     padding-top: 30px;
     /* background: linear-gradient(var(--bitcoin-orange), white); */
     /* background: linear-gradient(white, var(--light-blue), white, rgba(255, 166, 0, 0.144)) */
-    background: linear-gradient(45deg, var(--light-blue), white, white, var(--bitcoin-light-orange));
+    /* background: linear-gradient(45deg, var(--light-blue), white, white, var(--bitcoin-light-orange)); */
+    box-shadow: inset 0px 0px 100px #b1ceee;
 }
 
 .container {
@@ -310,16 +311,22 @@ footer {
     margin-top: 170px;
     text-align: center;
     background: linear-gradient(white 30%, var(--bitcoin-light-orange));
-    border: 3px solid black;
 }
 
-.
+.indent {
+    margin: 12% 5%;
+    box-shadow: inset 0px 0px 10px var(--bitcoin-gray);
+    border-radius: 50px;
+    background-color: white;
+    /* border: 5px solid black; */
+}
 
 .price-header {
     padding-top: 60px;
     font-weight: bold;
     letter-spacing: 3px;
     word-spacing: 8px;
+    text-decoration: underline;
 }
 
 .price-sect {
