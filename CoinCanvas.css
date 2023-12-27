@@ -90,10 +90,6 @@ nav ul {
     width: 300px;
 }
 
-.btn {
-    height: 50% !important;
-}
-
 .btn-outline-success {
     color: var(--bitcoin-orange);
     border-color: var(--bitcoin-orange);
@@ -262,9 +258,9 @@ footer {
 .crypto-info {
     margin-top: 170px; 
     padding-top: 30px;
-    background: linear-gradient(var(--bitcoin-orange), white);
+    /* background: linear-gradient(var(--bitcoin-orange), white); */
     /* background: linear-gradient(white, var(--light-blue), white, rgba(255, 166, 0, 0.144)) */
-    /* background: linear-gradient(45deg, var(--light-blue), white, white, var(--bitcoin-orange)); */
+    background: linear-gradient(45deg, var(--light-blue), white, white, var(--bitcoin-light-orange));
 }
 
 .container {
@@ -284,7 +280,7 @@ footer {
     font-size: 18px;
     /* box-shadow: 5px 5px 10px var(--bitcoin-gray); */
     border-left: 3px solid var(--bitcoin-gray);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 10px 0;
     padding: 10px;
 }
@@ -302,7 +298,7 @@ footer {
     align-items: center;
     min-height: 300px;
     border-right: 3px solid var(--bitcoin-gray);
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 
@@ -314,7 +310,10 @@ footer {
     margin-top: 170px;
     text-align: center;
     background: linear-gradient(white 30%, var(--bitcoin-light-orange));
+    border: 3px solid black;
 }
+
+.
 
 .price-header {
     padding-top: 60px;
@@ -358,7 +357,7 @@ footer {
 }
 
 .btn {
-    /* margin-top: 20% !important; */
+    margin-top: 20% !important;
 }
 
 .pricing-disclaimer {
