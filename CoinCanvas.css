@@ -75,7 +75,7 @@ nav ul {
     font-size: 22px !important;
     color: var(--bitcoin-gray) !important;
     letter-spacing: 2px !important;
-    margin: auto 7px !important;
+    margin: 0 7px !important;
 }
 
 .nav-link:hover {
@@ -87,7 +87,8 @@ nav ul {
 }
 
 .logo {
-    width: 300px;
+    width: 250px;
+    padding: 10px;
 }
 
 .btn-outline-success {
@@ -302,6 +303,34 @@ footer {
     /* border-radius: 10px; */
 }
 
+/*  */
+/*  */
+/* Latest Fiat */
+
+.construction-img-div {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.construction-div {
+    width: 60%;
+    border-left: 5px double var(--bitcoin-light-orange);
+    border-right: 5px double var(--bitcoin-light-orange);
+    border-radius: 20px;
+}
+
+.construction-text {
+    color: var(--bitcoin-gray)
+}
+
+.soon {
+    color: var(--bitcoin-orange);
+    text-decoration:double underline;
+}
+
+.construction-img {
+    width: 70%;
+}
 
 /*  */
 /*  */
@@ -374,4 +403,105 @@ footer {
     text-align: center;
     background-color: var(--bitcoin-light-orange);
     min-height: 300px !important;
+}
+
+/*  */
+/*  */
+/* Profile */
+
+.page {
+    margin-top: 145px;
+}
+
+.profile-value {
+    font-weight: bold;
+}
+
+.bento {
+    /* height: 100%; */
+    border-radius: 100px;
+    /* border: 3px solid black; */
+
+}
+
+.profile {
+    /* background-color: var(--light-blue); */
+    border: 20px solid var(--bitcoin-orange);
+    box-shadow: inset 0px 0px 15px var(--bitcoin-orange);
+    padding: 35px 0px;
+}
+
+.profile-img-div {
+    width: 45%;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    /* display: inline-block; */
+    background: radial-gradient(var(--bitcoin-light-orange) 55%, var(--light-blue));
+    /* padding: 10px; */
+}
+.profile-img {
+    width: 100%;
+}
+
+.profile-text {
+
+}
+
+.profile-p-cog {
+    width: 70%;
+    margin-top: 50px;
+}
+
+/* Cog rotation */
+@keyframes rotateTwice {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .cog {
+    width: 15%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .cog:hover {
+    animation: rotateTwice 5s linear;
+    cursor: pointer;
+  }
+  /* End Cog Rotation */
+
+.profile-paragraph > p {
+    display: block
+}
+
+.value {
+    background-color: var(--bitcoin-orange);
+    border: 5px solid var(--bitcoin-orange);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 35px 0;
+}
+
+.value > div > h1, h2 {
+    color: white;
+}
+
+.value > div > h1 {
+    font-size: 55px;
+}
+
+.value > div > h2 {
+    font-size: 40px;
+}
+
+.value > div > p {
+    font-size: 30px;
+}
+
+footer {
+    display: none;
 }
