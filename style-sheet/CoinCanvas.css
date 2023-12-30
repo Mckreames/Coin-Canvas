@@ -262,7 +262,7 @@ footer {
     /* background: linear-gradient(var(--bitcoin-orange), white); */
     /* background: linear-gradient(white, var(--light-blue), white, rgba(255, 166, 0, 0.144)) */
     /* background: linear-gradient(45deg, var(--light-blue), white, white, var(--bitcoin-light-orange)); */
-    box-shadow: inset 0px 0px 100px #b1ceee;
+    box-shadow: inset 0px 0px 0px var(--bitcoin-light-orange);
 }
 
 .container {
