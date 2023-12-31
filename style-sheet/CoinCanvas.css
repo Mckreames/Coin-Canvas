@@ -407,7 +407,7 @@ footer {
 
 /*  */
 /*  */
-/* Profile */
+/* Portfolio */
 
 .page {
     margin-top: 200px;
@@ -426,13 +426,14 @@ footer {
 
 .profile {
     /* background-color: var(--light-blue); */
-    border: 20px solid var(--bitcoin-orange);
+    border: 5px solid var(--bitcoin-orange);
     box-shadow: inset 0px 0px 15px var(--bitcoin-orange);
     padding: 35px 0px;
 }
 
 .profile-img-div {
     width: 45%;
+    height: 65%;
     /* border: 1px solid black; */
     border-radius: 50%;
     /* display: inline-block; */
@@ -443,9 +444,6 @@ footer {
     width: 100%;
 }
 
-.profile-text {
-
-}
 
 .profile-p-cog {
     width: 70%;
@@ -482,7 +480,9 @@ footer {
     /* background: var(--bitcoin-light-orange); */
     /* box-shadow: inset 0px 0px 0px var(--bitcoin-orange); */
 
-    border: 15px solid var(--bitcoin-orange);
+    border-left: 5px solid var(--bitcoin-orange);
+    border-right: 5px solid var(--bitcoin-orange);
+    border-radius: 0px;
     font-weight: bold;
     text-align: center;
     padding: 35px 0;
