@@ -63,6 +63,7 @@ h6 {
 
 nav {
     box-shadow: 1px 1px 10px orange;
+    height: 145px;
 }
 
 nav ul {
@@ -98,6 +99,10 @@ nav ul {
 
 section {
     min-height: 400px !important;
+}
+
+.background {
+    background: linear-gradient(45deg, var(--light-blue) 10%, white 21%, white 89%, var(--bitcoin-orange) 99%);
 }
 
 .hero {
@@ -256,22 +261,27 @@ footer {
 /*  */
 /* Latest Crypto HTML */
 
+.crypto-header {
+    /* border: 1px solid black; */
+    min-height: 200px !important;
+    padding-top: 70px;
+    text-align: center;
+    /* background: transparent; */
+    /* background: var(--bitcoin-gray); */
+    box-shadow: 1px 1px 10px var(--bitcoin-gray);
+}
+
+.crypto-header > p {
+    color: var(--bitcoin-gray);
+}
+
 .crypto-info {
-    margin-top: 170px; 
-    padding-top: 30px;
-    /* background: linear-gradient(var(--bitcoin-orange), white); */
-    /* background: linear-gradient(white, var(--light-blue), white, rgba(255, 166, 0, 0.144)) */
-    /* background: linear-gradient(45deg, var(--light-blue), white, white, var(--bitcoin-light-orange)); */
+    padding-top: 50px;
     box-shadow: inset 0px 0px 0px var(--bitcoin-light-orange);
 }
 
 .container {
-    /* background: linear-gradient(var(--light-blue), var(--bitcoin-orange)); */
-    /* background: radial-gradient(rgba(253, 169, 2, 0.089), white); */
-    /* background: radial-gradient(#d3e2f2b6, white); */
     border-radius: 10px;
-    /* background-color: rgba(255, 255, 255, 0.527); */
-
 }
 
 .crypto-list {
@@ -280,7 +290,6 @@ footer {
     min-height: 300px;
     font-weight: bold;
     font-size: 18px;
-    /* box-shadow: 5px 5px 10px var(--bitcoin-gray); */
     border-left: 3px solid var(--bitcoin-gray);
     /* border-radius: 10px; */
     margin: 10px 0;
@@ -307,8 +316,12 @@ footer {
 /*  */
 /* Latest Fiat */
 
+.view-height {
+    height: calc(100vh - 145px);
+}
+
 .construction-img-div {
-    margin-top: 200px;
+    margin-top: 145px;
     text-align: center;
 }
 
