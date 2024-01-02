@@ -350,13 +350,14 @@ footer {
 /* Pricing Page */
 
 .tier-list {
-    margin-top: 170px;
+    margin-top: 145px;
+    padding: 5px;
     text-align: center;
-    background: linear-gradient(white 30%, var(--bitcoin-light-orange));
+    /* background: linear-gradient(white 30%, var(--bitcoin-light-orange)); */
 }
 
 .indent {
-    margin: 12% 5%;
+    margin: 5% 3%;
     box-shadow: inset 0px 0px 10px var(--bitcoin-gray);
     border-radius: 50px;
     background-color: white;
@@ -410,11 +411,11 @@ footer {
 }
 
 .pricing-disclaimer {
-    padding-top: 5%;
+    /* padding-top: 0%; */
     padding-right: 10%;
     padding-left: 10%;
     text-align: center;
-    background-color: var(--bitcoin-light-orange);
+    /* background-color: var(--bitcoin-light-orange); */
     min-height: 300px !important;
 }
 
