@@ -428,13 +428,12 @@ footer {
 
 .profile-value {
     font-weight: bold;
+    box-shadow: inset 0 10px 10px -10px var(--bitcoin-gray);
 }
 
 .bento {
-    /* height: 100%; */
     border-radius: 100px;
-    /* border: 3px solid black; */
-
+    
 }
 
 .profile {
@@ -498,7 +497,7 @@ footer {
     border-radius: 0px;
     font-weight: bold;
     text-align: center;
-    padding: 30px 0;
+    padding: 35px -20px;
 }
 
 .green {
