@@ -328,6 +328,9 @@ footer a {
     height: calc(100vh - 145px);
 }
 
+.dotti-player {
+}
+
 .construction-img-div {
     margin-top: 145px;
     text-align: center;
@@ -336,13 +339,14 @@ footer a {
 
 .construction-div {
     width: 60%;
-    border-left: 5px double var(--bitcoin-light-orange);
-    border-right: 5px double var(--bitcoin-light-orange);
     border-radius: 20px;
+    margin-bottom: 50px;
 }
 
 .construction-text {
-    color: var(--bitcoin-gray)
+    color: var(--bitcoin-gray);
+    border-left: 5px double var(--bitcoin-light-orange);
+    border-right: 5px double var(--bitcoin-light-orange);
 }
 
 .soon {
@@ -352,6 +356,9 @@ footer a {
 
 .construction-img {
     width: 70%;
+}
+
+.fiat-footer {
 }
 
 /*  */
