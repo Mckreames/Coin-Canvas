@@ -384,6 +384,7 @@ footer a {
     margin-top: 145px;
     padding: 5px;
     text-align: center;
+    background: radial-gradient(gray 30%, white);
     /* background: linear-gradient(white 30%, var(--bitcoin-light-orange)); */
 }
 
@@ -393,6 +394,11 @@ footer a {
     border-radius: 50px;
     background-color: white;
     /* border: 5px solid black; */
+}
+
+h6 {
+    color: var(--light-blue);
+    margin: 0 20%;
 }
 
 .price-header {
@@ -406,7 +412,7 @@ footer a {
 }
 
 .price-sect {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 .tier {
