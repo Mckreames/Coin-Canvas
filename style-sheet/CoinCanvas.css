@@ -644,3 +644,7 @@ h6 {
     padding: 30px;
     font-size: 25px;
 }
+
+.terms-header {
+    text-decoration: underline;
+}
