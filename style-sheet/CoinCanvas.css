@@ -278,18 +278,27 @@ footer a {
     min-height: 200px !important;
     padding-top: 70px;
     text-align: center;
-    /* background: transparent; */
-    /* background: var(--bitcoin-gray); */
-    box-shadow: 1px 1px 10px var(--bitcoin-gray);
+    background: linear-gradient(90deg, var(--light-blue), white 20%, white 84%, var(--bitcoin-light-orange));
 }
 
 .crypto-header > p {
     color: var(--bitcoin-gray);
 }
 
+.line {
+    width: 50%;
+    height: 1px;
+    border: 3px solid var(--bitcoin-orange);
+    border-radius: 50px;
+    margin: 35px auto 0;
+    background: transparent;
+}
+
 .crypto-info {
+    /* box-shadow: inset 1px 1px 10px var(--bitcoin-gray); */
     padding-top: 50px;
-    box-shadow: inset 0px 0px 0px var(--bitcoin-light-orange);
+    background: linear-gradient(90deg, var(--light-blue), white 20%, white 84%, var(--bitcoin-light-orange));
+    padding: 50px 100px;
 }
 
 .container {
@@ -329,7 +338,7 @@ footer a {
 /* Latest Fiat */
 
 .view-height {
-    height: calc(100vh - 145px);
+    /* height: calc(100vh - 145px); */
 }
 
 .dotti-player {
@@ -338,13 +347,15 @@ footer a {
 .construction-img-div {
     margin-top: 145px;
     text-align: center;
+    height: 1vdh;
     /* width: 100%; */
 }
 
 .construction-div {
     width: 60%;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .construction-text {
