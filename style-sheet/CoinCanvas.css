@@ -305,9 +305,13 @@ footer a {
     border-radius: 10px;
 }
 
+.crypto-list-div {
+
+}
+
 .crypto-list {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     min-height: 300px;
     font-weight: bold;
     font-size: 18px;
@@ -327,7 +331,7 @@ footer a {
 
 .stats {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     min-height: 300px;
     border-right: 3px solid var(--bitcoin-gray);
     /* border-radius: 10px; */
