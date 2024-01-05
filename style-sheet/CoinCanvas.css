@@ -399,7 +399,7 @@ footer a {
     margin-top: 145px;
     padding: 5px;
     text-align: center;
-    background: radial-gradient(gray 30%, white);
+    background: radial-gradient(var(--light-blue) 30%, white);
     /* background: linear-gradient(white 30%, var(--bitcoin-light-orange)); */
 }
 

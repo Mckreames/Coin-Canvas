@@ -108,7 +108,7 @@ async function fetchData() {
   }
 }
 
-fetchData();
+// fetchData();
 // setInterval(fetchData, 1000);
 
 // baseUrl = "https://widgets.cryptocompare.com/";
