@@ -86,12 +86,11 @@ async function fetchData() {
       if (cryptoInfo) {
         // Construct the content using the data
         const content = `
-            <p>Date: ${cryptoInfo.date} </p>
             <p>Code: ${cryptoInfo.code} </p>
             <p>Rank: ${cryptoInfo.rank} </p>
-            <p>Market Cap: ${cryptoInfo.marketCap} </p>
             <p>Volume: ${cryptoInfo.volume} </p>
             <p>Rate: ${cryptoInfo.rate} </p>
+            <p>Market Cap: ${cryptoInfo.marketCap} </p>
             <p>Delta (Day): ${cryptoInfo.delta.hour}</p>
           `;
 
@@ -108,7 +107,7 @@ async function fetchData() {
   }
 }
 
-// fetchData();
+fetchData();
 // setInterval(fetchData, 1000);
 
 // baseUrl = "https://widgets.cryptocompare.com/";

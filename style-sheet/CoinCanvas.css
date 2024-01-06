@@ -68,10 +68,11 @@ h6 {
     left: 50%;
     transform: translate(-50%, -50%);
     height: 65%;
-    width: 35%;
+    width: 55%;
     border: 5px solid black;
     border-radius: 30px;
     background: var(--bitcoin-orange);
+    z-index: 999;
 }
 
 .inner-float-block {
@@ -79,7 +80,26 @@ h6 {
     height: 90%;
     width: 90%;
     margin: auto;
-    background-color: var(--light-blue);
+    border: 1px solid black;
+    /* background-color: var(--light-blue); */
+}
+
+.inner-float-block label {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.inner-float-block h2 {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.inner-float-img {
+    border: 1px solid black;
+    float: right;
+    width: 48%;
 }
 
 nav {
