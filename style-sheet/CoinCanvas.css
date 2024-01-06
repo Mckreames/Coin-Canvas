@@ -187,6 +187,10 @@ section {
     padding-bottom: 15px;
 }
 
+.lead {
+    font-size: 20px;
+}
+
 .auto-type {
     font-weight: bold
 }
@@ -503,6 +507,7 @@ h6 {
 
 .tier > ul > li {
     text-align: left;
+    font-size: 17px;
 }
 
 .btn {
@@ -544,11 +549,12 @@ h6 {
     box-shadow: inset 0px 0px 15px var(--bitcoin-orange);
     box-shadow: 5px 5px 10px var(--bitcoin-gray);
     padding: 35px 0px;
+    font-size: 20px;
 }
 
 .profile-img-div {
     width: 45%;
-    height: 65%;
+    height: 60%;
     /* border: 1px solid black; */
     border-radius: 50%;
     /* display: inline-block; */
