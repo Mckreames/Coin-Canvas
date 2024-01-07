@@ -107,7 +107,7 @@ async function fetchData() {
   }
 }
 
-fetchData();
+// fetchData();
 // setInterval(fetchData, 1000);
 
 // baseUrl = "https://widgets.cryptocompare.com/";
@@ -168,7 +168,10 @@ function crypData(symbol, embedderClass) {
     theUrl += "&cccTheme=" + encodeURIComponent(JSON.stringify(cccTheme));
 
     s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-    embedder.parentNode.appendChild(s);
+
+    if (embedder.parentNode != null) {
+      embedder.parentNode.appendChild(s);
+    }
   })();
 }
 
