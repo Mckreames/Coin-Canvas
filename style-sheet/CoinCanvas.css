@@ -652,6 +652,8 @@ h6 {
 .graph-invested {
     /* margin-top: 50px; */
     box-shadow: inset 0 10px 10px -10px var(--bitcoin-gray);
+    background: radial-gradient(var(--light-blue) , white 85%);
+    /* background: var(--light-blue); */
     padding: 40px;
 }
 

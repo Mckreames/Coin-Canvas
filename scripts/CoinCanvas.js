@@ -175,6 +175,8 @@ function crypData(symbol, embedderClass) {
   })();
 }
 
+// setInterval(fetchData, 1000);
+
 // Bitcoin
 crypData("BTC", ".bitcoin");
 
@@ -228,3 +230,5 @@ crypData("AVAX", ".avalanche");
 //   s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
 //   embedder.parentNode.appendChild(s);
 // })();
+
+// New Call for Crypto Data since my old API ran out of calls by mistake
