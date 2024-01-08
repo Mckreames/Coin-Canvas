@@ -1,5 +1,7 @@
 `use strict`;
 
+// Replacement Modal Component
+
 // Modal Window
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
