@@ -63,7 +63,7 @@ h6 {
 
 .float-block {
     position: absolute;
-    display: none;
+    display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -77,10 +77,11 @@ h6 {
 
 .inner-float-block {
     position: relative;
+    display: flex;
     height: 90%;
     width: 90%;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* background-color: var(--light-blue); */
 }
 
@@ -96,10 +97,83 @@ h6 {
     text-align: center;
 }
 
+@keyframes pulse {
+    0% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 75%);
+    }
+    5% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 73%);
+    }
+    10% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 71%);
+    }
+    15% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 69%);
+    }
+    20% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 67%);
+    }
+    25% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 65%);
+    }
+    30% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 63%);
+    }
+    35% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 61%);
+    }
+    40% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 59%);
+    }
+    45% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 57%);
+    }
+    50% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 55%);
+    }
+    55% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 57%);
+    }
+    60% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 59%);
+    }
+    65% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 61%);
+    }
+    70% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 63%);
+    }
+    75% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 65%);
+    }
+    80% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 67%);
+    }
+    85% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 69%);
+    }
+    90% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 71%);
+    }
+    95% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 73%);
+    }
+    100% {
+        background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 75%);
+    }
+}
+
 .inner-float-img {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     float: right;
-    width: 48%;
+    width: 50%;
+    background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 70%);
+    /* background-size: 50% 50%; */
+    animation: pulse 3s infinite;
+}
+
+form {
+    margin-right: 
 }
 
 nav {

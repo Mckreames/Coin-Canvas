@@ -138,8 +138,8 @@
 
     <section class="float-block">
       <section class="inner-float-block">
-        <h2>Sign Up!</h2>
         <form class="row col-md-5">
+          <h2>Sign Up!</h2>
           <div class="col-md-12">
             <label for="inputEmail4" class="form-label">Email</label>
             <input type="email" class="form-control" id="inputEmail4" />
@@ -160,7 +160,23 @@
             <button type="submit" class="btn btn-primary">Sign in</button>
           </div>
         </form>
-        <section class="col-md-5 inner-float-img"></section>
+        <section
+          class="offset-1 col-md-5 d-flex align-items-center inner-float-img"
+        >
+          <script
+            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+
+          <dotlottie-player
+            src="https://lottie.host/6a852734-b369-4f47-9663-0ff3fafaa2b2/i96TAyeVxU.json"
+            background="transparent"
+            speed="1"
+            style="width: 100%; max-height: 600px"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </section>
       </section>
     </section>
 
