@@ -173,7 +173,24 @@ h6 {
 }
 
 form {
-    margin-right: 
+    /* background: linear-gradient(0deg, var(--light-blue), white 30%); */
+    background: white;
+    border: 5px solid var(--bitcoin-light-orange);
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+input {
+    border: 3px solid var(--light-blue) !important;
+}
+
+.newsletter-label {
+    font-size: 15px !important;
+}
+
+.btn-cntr {
+    margin: 0 auto !important;
 }
 
 nav {
