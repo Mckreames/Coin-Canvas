@@ -220,6 +220,12 @@ nav ul {
     color: var(--bitcoin-orange) !important;
 }
 
+.fiat {
+    /* text-decoration: line-through!important; */
+    color: rgb(179, 179, 179);
+    /* color: var(--light-blue); */
+}
+
 .portfolio-link {
     text-decoration: underline;
     text-decoration-color: var(--bitcoin-light-orange);
