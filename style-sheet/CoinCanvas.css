@@ -593,7 +593,7 @@ h6 {
 }
 
 .tier {
-    margin: 45px;
+    /* margin: 45px; */
     padding: 3% 2%;
     min-height: 600px;
     border-radius: 50px;
@@ -624,7 +624,7 @@ h6 {
 }
 
 .btn {
-    margin-top: 20% !important;
+    /* margin-top: 20% !important; */
 }
 
 .pricing-disclaimer {
@@ -921,6 +921,19 @@ h6 {
 
     .construction-text {
         font-size: 20px;
+    }
+
+    .price-header {
+        font-size: 28px;
+    }
+
+    .indent h6 {
+        /* font-size: 20px; */
+        margin: 0 1% 0;
+    }
+
+    .price-sect {
+        
     }
 }
 
