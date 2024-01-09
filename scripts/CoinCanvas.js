@@ -44,7 +44,7 @@ async function fetchData() {
     const cryptoData = result;
 
     // Iterate through each crypto div
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 9; i++) {
       const cryptoDiv = document.querySelector(`.crypto${i}`);
       const cryptoInfo = cryptoData.data.getCryptoLatest[i - 1]; // Adjust the index
 
@@ -155,16 +155,13 @@ crypData("USDT", ".tether");
 crypData("BNB", ".binance-coin");
 
 // XRP
-crypData("XRP", ".xrp");
+crypData("XRP", ".ripple");
 
 // Solana
 crypData("SOL", ".solana");
 
 // USD Coin
 crypData("USDC", ".usd-coin");
-
-// Ripple
-crypData("XRP", ".ripple");
 
 // Cardano
 crypData("ADA", ".cardano");

@@ -14,6 +14,7 @@ const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnClosedModal = document.querySelector(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
+const exit = document.querySelector(".exit");
 console.log(btnsOpenModal);
 
 // Open Modal
@@ -22,6 +23,7 @@ const openModal = function () {
   modal.classList.remove(`hidden`);
   modal.classList.add(`d-flex`);
   overlay.classList.remove(`hidden`);
+  document.body.style.overflowY = "hidden";
 };
 
 // Close Modal
@@ -30,6 +32,7 @@ const closeModal = function () {
   modal.classList.remove(`d-flex`);
   modal.classList.add(`hidden`);
   overlay.classList.add(`hidden`);
+  document.body.style.overflowY = "visible";
 };
 
 for (let i = 0; i < btnsOpenModal.length; i++) {
@@ -39,6 +42,7 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
 
 btnClosedModal.addEventListener(`click`, closeModal);
 overlay.addEventListener(`click`, closeModal);
+exit.addEventListener(`click`, closeModal);
 
 document.addEventListener(`keydown`, function (e) {
   console.log(e.key);
