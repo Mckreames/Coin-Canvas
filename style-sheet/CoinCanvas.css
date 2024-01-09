@@ -828,3 +828,63 @@ h6 {
 .terms-header {
     text-decoration: underline;
 }
+
+@media (max-width: 1900px) {
+    .hero-header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1625px) {
+    .hero-header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .hero-header {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .hero-header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1274px) {
+    .hero-header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-header {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-header {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-header {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 395px) {
+    .hero-header {
+        font-size: 19px;
+    }
+}
