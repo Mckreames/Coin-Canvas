@@ -834,6 +834,10 @@ h6 {
     .hero-header {
         font-size: 40px;
     }
+
+    .tier {
+        background: linear-gradient(var(--bitcoin-orange) 20%, white 20%);
+    }
 }
 
 @media (max-width: 1625px) {
@@ -855,6 +859,10 @@ h6 {
 
     .construction-div {
         width: 80%;
+    }
+
+    .tier {
+        margin: 10px;
     }
 
 }
