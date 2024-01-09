@@ -517,9 +517,6 @@ footer a {
     /* height: calc(100vh - 145px); */
 }
 
-.dotti-player {
-}
-
 .construction-img-div {
     margin-top: 145px;
     text-align: center;
@@ -545,8 +542,12 @@ footer a {
     text-decoration:double underline;
 }
 
-.construction-img {
-    width: 70%;
+.big-construction-img {
+    display: block;
+}
+
+.small-construction-img {
+    display: none;
 }
 
 .fiat-footer {
@@ -851,12 +852,15 @@ h6 {
     .hero-header {
         font-size: 40px;
     }
+
+    .construction-div {
+        width: 80%;
+    }
+
 }
 
-@media (max-width: 1274px) {
-    .hero-header {
-        font-size: 40px;
-    }
+@media (max-width: 1200px) {
+
 }
 
 @media (max-width: 1024px) {
@@ -869,17 +873,46 @@ h6 {
     .hero-header {
         font-size: 40px;
     }
+
+    .construction-div {
+        width: 90%;
+    }
+
 }
 
 @media (max-width: 768px) {
     .hero-header {
         font-size: 38px;
     }
+
+    .construction-div {
+        width: 100%;
+    }
+
+    .big-construction-img {
+        display: none;
+    }
+
+    .small-construction-img {
+        display: block;
+    }
 }
 
 @media (max-width: 576px) {
     .hero-header {
         font-size: 28px;
+    }
+
+    .construction-div > h1 {
+        font-size: 22px;
+    }
+
+    .construction-sign {
+        display: none;
+    }
+
+    .construction-text {
+        font-size: 20px;
     }
 }
 
