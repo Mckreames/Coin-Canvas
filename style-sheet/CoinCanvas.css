@@ -237,7 +237,7 @@ nav ul {
 
 .fiat {
     /* text-decoration: line-through!important; */
-    color: rgb(179, 179, 179);
+    /* color: rgb(179, 179, 179); */
     /* color: var(--light-blue); */
 }
 
@@ -879,6 +879,10 @@ h6 {
 @media (max-width: 992px) {
     .hero-header {
         font-size: 40px;
+    }
+
+    .terms-sect {
+        margin: 10% 2% 3% 2%;
     }
 
     .construction-div {
