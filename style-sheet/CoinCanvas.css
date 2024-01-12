@@ -35,6 +35,8 @@ h6 {
     color: var(--bitcoin-light-orange) !important;
 }
 
+
+
 .hidden {
     display: none;
 }
@@ -867,7 +869,14 @@ h6 {
 }
 
 @media (max-width: 1200px) {
+    .logo {
+        width: 200px;
+    }
 
+    .nav-link {
+        font-size: 17px !important;
+        margin: 0 !important
+    }
 }
 
 @media (max-width: 1024px) {
@@ -879,6 +888,29 @@ h6 {
 @media (max-width: 992px) {
     .hero-header {
         font-size: 40px;
+    }
+
+    .navbar-nav {
+        /* display: block; */
+        justify-content: center;
+    }
+
+    .nav-link {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .collapse {
+        /* background: radial-gradient(var(--bitcoin-light-orange), white 60%); */
+        background: linear-gradient(white, var(--bitcoin-light-orange));
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+    }
+
+    .nav-link {
+        font-size: 25px !important;
+        margin: 0 !important
     }
 
     .terms-sect {
@@ -951,5 +983,16 @@ h6 {
 @media (max-width: 395px) {
     .hero-header {
         font-size: 19px;
+    }
+}
+
+@media (max-width: 313px) {
+    .navbar-brand {
+        /* width: 100%; */
+        margin: auto;
+    }
+    
+    .navbar-toggler {
+        margin: 3% auto auto;
     }
 }
