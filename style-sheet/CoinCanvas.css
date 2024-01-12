@@ -454,13 +454,26 @@ footer a {
 }
 
 .line {
-    width: 50%;
+    width: 30%;
     height: 1px;
-    border: 3px solid var(--bitcoin-orange);
+    /* border: 3px solid var(--bitcoin-orange); */
+    border: 3px double var(--bitcoin-gray);
     border-radius: 50px;
     margin: 35px auto 0;
     background: transparent;
 }
+
+.top-line {
+    margin: 0 auto 35px;    
+}
+
+.bottom-line {
+
+}
+
+/* .search-bar {
+    width: 50%;
+} */
 
 .crypto-info {
     /* box-shadow: inset 1px 1px 10px var(--bitcoin-gray); */
