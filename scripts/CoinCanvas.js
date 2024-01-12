@@ -169,7 +169,41 @@ crypData("ADA", ".cardano");
 // Avalanche
 crypData("AVAX", ".avalanche");
 
-// Ethereum
+//
+//
+// Search Bar
+const cryptoData = [
+  { id: "bitcoin", name: "Bitcoin" },
+  { id: "ethereum", name: "Ethereum" },
+  { id: "tether", name: "Tether" },
+  { id: "binance-coin", name: "Binance Coin" },
+  { id: "solana", name: "Solana" },
+  { id: "usd-coin", name: "USD Coin" },
+  { id: "ripple", name: "Ripple" },
+  { id: "cardano", name: "Cardano" },
+  { id: "avalanche", name: "Avalanche" },
+];
+
+const searchBar = $(".search-bar");
+const suggestionList = $("#suggestionList");
+
+searchBar.on("keyup", function () {
+  const query = searchBar.val().toLowerCase();
+  updateSuggestions(query);
+});
+
+function updateSuggestions(query) {
+  suggestionList.empty();
+  const filteredSuggestions = cryptoData.filter((crypto) =>
+    crypto.name.toLowerCase().includes(query)
+  );
+
+  for (let i = 0; i < Math.min(filteredSuggestions.length, 5); i++) {
+    suggestionList.append(
+      `<li class="list-group-item">${filteredSuggestions[i].name}</li>`
+    );
+  }
+}
 
 // baseUrl = "https://widgets.cryptocompare.com/";
 // var ethereum = document.querySelector(".ethereum");

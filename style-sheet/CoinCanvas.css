@@ -455,7 +455,7 @@ footer a {
 
 .line {
     width: 40%;
-    height: 2px;
+    /* height: 2px; */
     /* border: 3px double var(--bitcoin-orange); */
     border: 1px solid var(--bitcoin-gray);
     box-shadow: 5px 5px 10px black;
@@ -471,6 +471,19 @@ footer a {
 /* .search-bar {
     width: 50%;
 } */
+
+.suggestion-list {
+    margin-top: 3%;
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.list-group-item {
+    border: 1px solid black;
+    width: 30%;
+}
 
 .crypto-info {
     /* box-shadow: inset 1px 1px 10px var(--bitcoin-gray); */
