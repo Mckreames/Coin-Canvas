@@ -454,10 +454,11 @@ footer a {
 }
 
 .line {
-    width: 30%;
-    height: 1px;
-    /* border: 3px solid var(--bitcoin-orange); */
-    border: 3px double var(--bitcoin-gray);
+    width: 40%;
+    height: 2px;
+    /* border: 3px double var(--bitcoin-orange); */
+    border: 1px solid var(--bitcoin-gray);
+    box-shadow: 5px 5px 10px black;
     border-radius: 50px;
     margin: 35px auto 0;
     background: transparent;
@@ -465,10 +466,6 @@ footer a {
 
 .top-line {
     margin: 0 auto 35px;    
-}
-
-.bottom-line {
-
 }
 
 /* .search-bar {
