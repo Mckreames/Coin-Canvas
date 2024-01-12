@@ -1,11 +1,11 @@
 `use strict`;
 
 // Stop the submit button from reloading the page
-document
-  .getElementById("signupForm")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-  });
+// document
+//   .getElementById("signupForm")
+//   .addEventListener("submit", function (event) {
+//     event.preventDefault();
+//   });
 
 // Modal window functionality
 

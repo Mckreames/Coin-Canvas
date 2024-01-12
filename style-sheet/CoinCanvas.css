@@ -728,8 +728,20 @@ h6 {
     color: red;
 }
 
+.gray {
+    color: var(--bitcoin-gray);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 .orange {
     color: var(--bitcoin-orange);
+}
+
+.light-blue {
+    color: var(--light-blue);
 }
 
 .blue {
@@ -1028,6 +1040,8 @@ h6 {
     .profile-text p {
         font-size: 25px;
     }
+
+
 }
 
 @media (max-width: 576px) {
