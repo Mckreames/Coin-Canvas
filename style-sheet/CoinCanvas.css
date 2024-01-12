@@ -666,7 +666,7 @@ h6 {
 }
 
 .profile-img-div {
-    width: 45%;
+    /* width: 45%; */
 }
 .profile-img {
     width: 100%;
@@ -940,6 +940,10 @@ h6 {
         margin: 0;
     }
 
+    .value {
+        margin-top: 6%;
+    }
+
     .acct-value > h1{
         font-size: 40px !important;
     }
@@ -948,20 +952,36 @@ h6 {
         font-size: 36px !important;
     }
 
-    .today-change h2, p {
-        font-size: 20px !important;
+    .today-change > h2 {
+        font-size: 30px !important;
     }
 
-    .annual-return h2, p {
-        font-size: 20px !important;
+    .today-change > p {
+        font-size: 30px !important;
     }
 
-    .buying-power h2, p {
-        font-size: 20px !important;
+    .annual-return h2 {
+        font-size: 30px !important;
     }
 
-    .cash h2, p {
-        font-size: 20px !important;
+    .annual-return p {
+        font-size: 30px !important;
+    }
+
+    .buying-power h2 {
+        font-size: 30px !important;
+    }
+
+    .buying-power p {
+        font-size: 30px !important;
+    }
+
+    .cash h1 {
+        font-size: 30px !important;
+    }
+
+    .cash p {
+        font-size: 30px !important;
     }
 
 }
@@ -983,12 +1003,30 @@ h6 {
         display: block;
     }
 
-    .profile {
-        justi
-    }
-
     .cog {
         margin: auto;
+    }
+
+    .invested-crypto {
+        margin-top: 6%;
+    }
+
+    .profile-img {
+        width: 70% !important; 
+        margin: auto;
+    }
+
+    .profile-text {
+        text-align: center;
+    }
+
+    .profile-text h2 {
+        font-size: 35px;
+        margin-top: 3%
+    }
+
+    .profile-text p {
+        font-size: 25px;
     }
 }
 
@@ -1024,6 +1062,15 @@ h6 {
 
     .tier > h6 {
         margin-top: 10%;
+    }
+
+    .profile-text h2 {
+        font-size: 25px;
+        margin-top: 3%
+    }
+
+    .profile-text p {
+        font-size: 15px;
     }
 }
 
