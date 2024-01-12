@@ -659,8 +659,7 @@ h6 {
 
 .profile {
     background-color: white;
-    border: 5px solid var(--bitcoin-orange);
-    box-shadow: inset 0px 0px 15px var(--bitcoin-orange);
+    border: 4px solid var(--bitcoin-orange);
     box-shadow: 5px 5px 10px var(--bitcoin-gray);
     padding: 35px 0px;
     font-size: 20px;
@@ -991,7 +990,7 @@ h6 {
         /* width: 100%; */
         margin: auto;
     }
-    
+
     .navbar-toggler {
         margin: 3% auto auto;
     }
