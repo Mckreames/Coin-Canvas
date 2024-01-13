@@ -473,9 +473,9 @@ footer a {
 } */
 
 .suggestion-list {
-    margin-top: 3%;
+    margin-top: 10px;
     list-style: none;
-    padding: 0;
+    padding: 20px 0 0 0;
     max-height: 150px;
     overflow-y: auto;
 }
