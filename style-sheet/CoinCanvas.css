@@ -924,6 +924,10 @@ h6 {
         font-size: 40px;
     }
 
+    .navbar {
+        height: 90px;
+    }
+
     .navbar-nav {
         /* display: block; */
         justify-content: center;
