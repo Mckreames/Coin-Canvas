@@ -473,16 +473,25 @@ footer a {
 } */
 
 .suggestion-list {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     list-style: none;
     padding: 20px 0 0 0;
-    max-height: 150px;
-    overflow-y: auto;
+    /* max-height: 150px; */
+    /* overflow-y: auto; */
 }
 
 .list-group-item {
-    border: 1px solid black;
-    width: 30%;
+    /* border: 1px solid black; */
+    /* border-radius: 50px; */
+    width: 50%;
+    background: var(--light-blue);
+}
+
+.list-group-item:hover {
+    background: var(--bitcoin-light-orange);
+    color: white;
+    /* font-weight: bold; */
+    cursor: pointer;
 }
 
 .crypto-info {

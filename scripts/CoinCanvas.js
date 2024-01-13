@@ -188,6 +188,7 @@ const searchBar = $(".search-bar");
 const suggestionList = $("#suggestionList");
 
 searchBar.on("keyup", function () {
+  ifMonstrosity();
   const query = searchBar.val().toLowerCase();
   updateSuggestions(query);
 });
@@ -200,11 +201,68 @@ function updateSuggestions(query) {
 
   for (let i = 0; i < Math.min(filteredSuggestions.length, 5); i++) {
     suggestionList.append(
-      `<li class="list-group-item">${filteredSuggestions[i].name}</li>`
+      `<li class="list-group-item search${filteredSuggestions[i].name}">${filteredSuggestions[i].name}</li>`
     );
   }
 }
 
+const bitcoinResult = document.querySelector(".searchBitcoin");
+const ethereumResult = document.querySelector(".searchEtherium");
+const tetherResult = document.querySelector(".searchTether");
+const binanceCoinResult = document.querySelector(".searchBinance");
+const solanaResult = document.querySelector(".searchSolana");
+const usdCoinResult = document.querySelector(".searchUSD");
+const rippleResult = document.querySelector(".searchRipple");
+const cardanoResult = document.querySelector(".searchCardano");
+const avalancheResult = document.querySelector(".searchAvalanche");
+
+const bitcoinGraph = document.querySelector(".bitcoin");
+const ethereumGraph = document.querySelector(".etherium");
+const tetherGraph = document.querySelector(".tether");
+const binanceCoinGraph = document.querySelector(".binance-coin");
+const solanaGraph = document.querySelector(".solana");
+const usdCoinGraph = document.querySelector(".usd-coin");
+const rippleGraph = document.querySelector(".ripple");
+const cardanoGraph = document.querySelector(".cardano");
+const avalancheGraph = document.querySelector(".avalanche");
+
+function scrollToGraph(className) {
+  console.log("Suggestion Clicked!");
+  className.scrollIntoView({ behavior: "smooth" });
+}
+
+function ifMonstrosity() {
+  if (bitcoinResult) {
+    bitcoinResult.addEventListener("click", scrollToGraph(bitcoinGraph));
+  }
+  if (ethereumResult) {
+    ethereumResult.addEventListener("click", scrollToGraph(ethereumGraph));
+  }
+  if (tetherResult) {
+    tetherResult.addEventListener("click", scrollToGraph(tetherGraph));
+  }
+  if (binanceCoinResult) {
+    binanceCoinResult.addEventListener(
+      "click",
+      scrollToGraph(binanceCoinGraph)
+    );
+  }
+  if (solanaResult) {
+    solanaResult.addEventListener("click", scrollToGraph(solanaGraph));
+  }
+  if (usdCoinResult) {
+    usdCoinResult.addEventListener("click", scrollToGraph(usdCoinGraph));
+  }
+  if (rippleResult) {
+    rippleResult.addEventListener("click", scrollToGraph(rippleGraph));
+  }
+  if (cardanoResult) {
+    cardanoResult.addEventListener("click", scrollToGraph(cardanoGraph));
+  }
+  if (avalancheResult) {
+    avalancheResult.addEventListener("click", scrollToGraph(avalancheGraph));
+  }
+}
 // baseUrl = "https://widgets.cryptocompare.com/";
 // var ethereum = document.querySelector(".ethereum");
 // var embedder = ethereum[ethereum.length - 1];
