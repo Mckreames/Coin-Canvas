@@ -1106,8 +1106,8 @@ h6 {
         margin: 1%;
     }
 
-    .price-sect {
-        
+    .tier > h3 {
+        margin-top: 15px;
     }
 
     .tier > h6 {
@@ -1121,6 +1121,12 @@ h6 {
 
     .profile-text p {
         font-size: 15px;
+    }
+}
+
+@media (max-width: 460px) {
+    .tier > h6 {
+        margin-top: 20%;
     }
 }
 
