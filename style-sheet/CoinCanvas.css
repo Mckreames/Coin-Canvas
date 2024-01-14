@@ -462,6 +462,17 @@ footer a {
     color: var(--bitcoin-gray);
 }
 
+.search-btn {
+    color: white;
+}
+
+.search-btn:hover {
+    border: 1px solid var(--bitcoin-orange);
+    background: var(--bitcoin-orange);
+    color: black;
+    box-shadow: 0 0 5px var(--bitcoin-gray);
+}
+
 .line {
     width: 40%;
     /* height: 2px; */
@@ -521,7 +532,10 @@ footer a {
     min-height: 400px;
     align-items: center;
     background: white;
-    /* box-shadow: inset 1px 1px 10px var(--bitcoin-light-orange); */
+}
+
+.crypto-list-div:hover {
+    box-shadow: inset 0px 0px 10px var(--bitcoin-orange);
 }
 
 .crypto-list {
@@ -666,7 +680,8 @@ h6 {
 }
 
 .btn {
-    /* margin-top: 20% !important; */
+    background: linear-gradient(var(--bitcoin-orange), rgb(252, 170, 17), var(--bitcoin-orange));
+
 }
 
 .pricing-disclaimer {
