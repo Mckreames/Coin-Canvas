@@ -960,16 +960,44 @@ h6 {
         margin: 0 !important
     }
 
+    .hero {
+        margin-top: 90px;
+    }
+
+    .hero-text-container {
+        padding: 0 2% 0;
+    }
+
     .terms-sect {
         margin: 10% 2% 3% 2%;
+    }
+
+    .construction-img-div {
+        margin-top: 90px;
     }
 
     .construction-div {
         width: 90%;
     }
 
+    .tier-list {
+        margin-top: 90px;
+    }
+
     .tier {
         width: 90%;
+    }
+
+    .pricing-disclaimer {
+        padding: 1%;
+    }
+
+    .pricing-disclaimer > h6 {
+        margin: 0;
+    }
+
+    .page {
+        margin-top: 90px;
     }
 
     .profile-text h2 {

@@ -174,7 +174,7 @@ function updateSuggestions(query) {
 
   for (let i = 0; i < Math.min(filteredSuggestions.length, 5); i++) {
     suggestionList.append(
-      `<li class="list-group-item suggestion-item data-cryptoid="${filteredSuggestions[i].id}">${filteredSuggestions[i].name}</li>`
+      `<a class="list-group-item suggestion-item" href="#${filteredSuggestions[i].id}"><li>${filteredSuggestions[i].name}</li></a>`
     );
     console.log(filteredSuggestions[i].id);
   }
@@ -186,36 +186,36 @@ function updateSuggestions(query) {
   // });
 }
 
-function scrollToGraph(targetGraph) {
-  console.log("Suggestion Clicked!");
-  console.log("Target Graph:", targetGraph);
+// function scrollToGraph(targetGraph) {
+//   console.log("Suggestion Clicked!");
+//   console.log("Target Graph:", targetGraph);
 
-  if (targetGraph.length > 0) {
-    $("html, body").animate(
-      {
-        scrollTop: targetGraph.offset().top,
-      },
-      1000
-    );
-  } else {
-    console.error("Target graph not found or is empty.");
-  }
-}
+//   if (targetGraph.length > 0) {
+//     $("html, body").animate(
+//       {
+//         scrollTop: targetGraph.offset().top,
+//       },
+//       1000
+//     );
+//   } else {
+//     console.error("Target graph not found or is empty.");
+//   }
+// }
 
-suggestionList.on("click", ".suggestion-item", function () {
-  const cryptoId = $(this).data("cryptoid");
-  const targetGraph = $(`#${cryptoId} .crypto-list .graph`);
+// suggestionList.on("click", ".suggestion-item", function () {
+//   const cryptoId = $(this).data("cryptoid");
+//   const targetGraph = $(`#${cryptoId} .crypto-list .graph`);
 
-  console.log("Clicked Suggestion:", cryptoId);
-  console.log("Target Graph Element:", targetGraph);
+//   console.log("Clicked Suggestion:", cryptoId);
+//   console.log("Target Graph Element:", targetGraph);
 
-  if (targetGraph.length) {
-    scrollToGraph(targetGraph);
-  } else {
-    console.error("Target graph not found or is empty.");
-  }
-  scrollToGraph(targetGraph);
-});
+//   if (targetGraph.length) {
+//     scrollToGraph(targetGraph);
+//   } else {
+//     console.error("Target graph not found or is empty.");
+//   }
+//   scrollToGraph(targetGraph);
+// });
 
 // const bitcoinResult = document.querySelector(".searchBitcoin");
 // const ethereumResult = document.querySelector(".searchEtherium");

@@ -60,18 +60,21 @@ function fetchCryptoText() {
   fetch(apiUrl)
     .then((response) => {
       if (!response.ok) {
-        throw new Error("HTTP error! StatusL: ${response.status}");
+        throw new Error("HTTP error! Status: ${response.status}");
       }
-      console.log(response);
       return response.json();
     })
     .then((data) => {
       // Update html with data
       for (let i = 1; i <= 9; i++) {
         let textDataDiv = document.querySelector(`.invested${i}`);
-        textDataDiv.inner;
+
+        // Replace 'symbol' with the actual property you want from the API response
+        let symbolData = data.rates[`symbol${i}`]; // Replace 'symbol' with the actual property name
+
+        // Update the HTML content of the div
+        textDataDiv.innerHTML = `<p>${symbolData}</p>`;
       }
-      console.log(data);
     })
     .catch((error) => {
       console.error("Error:", error);
