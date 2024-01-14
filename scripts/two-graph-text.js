@@ -47,3 +47,33 @@ crypData("BTC", ".bitcoin");
 
 // Ethereum
 crypData("ETH", ".ethereum");
+
+//
+//
+// Text API
+function fetchCryptoText() {
+  const baseUrl = "http://api.coinlayer.com/api/";
+  const apiKey = "b1e26d8d9f504814e70c70815a7a1209";
+
+  const apiUrl = `${baseUrl}live?access_key=${apiKey}&symbols=BTC,ETH,USDT,BNB,SOL,USDC,XRP,ADA,AVAX`;
+
+  fetch(apiUrl)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("HTTP error! StatusL: ${response.status}");
+      }
+      console.log(response);
+      return response.json();
+    })
+    .then((data) => {
+      // Update html with data
+      for (let i = 1; i <= 9; i++) {
+        let textDataDiv = document.querySelector(`.invested${i}`);
+        textDataDiv.inner;
+      }
+      console.log(data);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}

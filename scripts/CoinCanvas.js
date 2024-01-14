@@ -72,32 +72,6 @@ async function fetchData() {
   }
 }
 
-// fetchData();
-// setInterval(fetchData, 1000);
-
-// baseUrl = "https://widgets.cryptocompare.com/";
-// var bitcoin = document.querySelector(".bitcoin");
-// var embedder = bitcoin;
-// var cccTheme = {
-//   Header: { background: "#d3e2f2", displayFollowers: false },
-//   Followers: { color: "#f7931a" },
-//   Data: { priceColor: "#f7931a" },
-//   Chart: { animation: true, fillColor: "#ffc681", borderColor: "#f7931a" },
-//   Trend: { colorUnchanged: "#f7931a" },
-// };
-// (function () {
-//   var appName = encodeURIComponent(window.location.hostname);
-//   if (appName == "") {
-//     appName = "local";
-//   }
-//   var s = document.createElement("script");
-//   s.type = "text/javascript";
-//   s.async = true;
-//   var theUrl = baseUrl + "serve/v1/coin/chart?fsym=BTC&tsym=USD";
-//   s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-//   embedder.parentNode.appendChild(s);
-// })();
-
 function crypData(symbol, embedderClass) {
   var baseUrl = "https://widgets.cryptocompare.com/";
   var embedder = document.querySelector(embedderClass);
