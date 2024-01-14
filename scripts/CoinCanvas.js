@@ -179,6 +179,19 @@ function updateSuggestions(query) {
     console.log(filteredSuggestions[i].id);
   }
 
+  document
+    .getElementById("suggestionList")
+    .addEventListener("click", function (event) {
+      if (event.target.tagName === "A") {
+        const hrefValue = event.target.getAttribute("href");
+        const rawHrefValue = hrefValue.slice(1);
+        rawHrefValue.style.animation = "flash 1s 3";
+        rawHrefValue.addEventListener("animationed", function () {
+          rawHrefValue.style.animation = "";
+        });
+      }
+    });
+
   // suggestionList.find("li").on("click", function () {
   //   const cryptoId = $(this).attr("class").split(" ")[1]; //Find cryptoId
   //   const targetGraph = $(`#${cryptoId}/graph`); //Find targetGraph
