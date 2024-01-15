@@ -13,10 +13,6 @@
     --dogwood-rose: #d90368;
 }
 
-/* html {
-    width: 100%;
-} */
-
 h1, h2, h3, h4, h5 {
     font-family: 'Merriweather', serif;
     color: var(--bitcoin-orange);
@@ -40,21 +36,6 @@ h6 {
 .hidden {
     display: none;
 }
-
-/* .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    max-width: 600px;
-    background-color: purple;
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
-    z-index: 999;
-    text-align: center;
-} */
 
 .overlay {
     position: fixed;
@@ -98,8 +79,6 @@ h6 {
     height: 90%;
     width: 90%;
     margin: auto;
-    /* border: 1px solid black; */
-    /* background-color: var(--light-blue); */
 }
 
 .inner-float-block label {
@@ -190,16 +169,13 @@ h6 {
 }
 
 .inner-float-img {
-    /* border: 1px solid black; */
     float: right;
     width: 50%;
     background: radial-gradient(var(--bitcoin-light-orange), var(--bitcoin-orange) 70%);
-    /* background-size: 50% 50%; */
     animation: pulse 3s infinite;
 }
 
 form {
-    /* background: linear-gradient(0deg, var(--light-blue), white 30%); */
     background: white;
     border: 5px solid var(--bitcoin-light-orange);
     border-radius: 20px;
@@ -213,10 +189,6 @@ input {
 
 .newsletter-label {
     font-size: 15px !important;
-}
-
-.btn-cntr {
-    /* margin: 0 auto !important; */
 }
 
 nav {
@@ -249,12 +221,6 @@ nav ul {
 .navbar-toggler {
     background: white;
     border: 1px solid var(--bitcoin-orange)
-}
-
-.fiat {
-    /* text-decoration: line-through!important; */
-    /* color: rgb(179, 179, 179); */
-    /* color: var(--light-blue); */
 }
 
 .portfolio-link {
@@ -292,11 +258,9 @@ section {
     margin-top: 145px;
     min-height: 600px;
     background: linear-gradient(45deg, var(--light-blue) 10%, white 21%, white 89%, var(--bitcoin-orange) 99%);
-    /* background: radial-gradient(white 96%, var(--bitcoin-orange) 99%); */
 }
 
 .hero-color-reverse {
-    /* margin-top: 145px; */
     min-height: 600px;
     background: linear-gradient(135deg,  var(--light-blue) 10%, white 21%, white 89%, var(--bitcoin-orange) 99%);
 }
@@ -392,13 +356,11 @@ img {
 .newsletter-sect {
     position: relative;
     padding: 0 0 10% 0;
-    /* box-shadow: inset 0 10px 10px -10px var(--bitcoin-gray); */
     background: linear-gradient(var(--bitcoin-orange), rgb(14, 13, 13));
 }
 
 .newsletter-img-sect {
     background: transparent !important;
-    /* background-color:  */
 }
 
 .newsletter {
@@ -484,8 +446,6 @@ footer a {
 
 .line {
     width: 40%;
-    /* height: 2px; */
-    /* border: 3px double var(--bitcoin-orange); */
     border: 1px solid var(--bitcoin-gray);
     box-shadow: 5px 5px 10px black;
     border-radius: 50px;
@@ -497,21 +457,12 @@ footer a {
     margin: 0 auto 35px;    
 }
 
-/* .search-bar {
-    width: 50%;
-} */
-
 .suggestion-list {
-    /* margin-top: 10px; */
     list-style: none;
     padding: 20px 0 0 0;
-    /* max-height: 150px; */
-    /* overflow-y: auto; */
 }
 
 .list-group-item {
-    /* border: 1px solid black; */
-    /* border-radius: 50px; */
     width: 50%;
     background: var(--light-blue);
 }
@@ -519,12 +470,10 @@ footer a {
 .list-group-item:hover {
     background: var(--bitcoin-light-orange);
     color: white;
-    /* font-weight: bold; */
     cursor: pointer;
 }
 
 .crypto-info {
-    /* box-shadow: inset 1px 1px 10px var(--bitcoin-gray); */
     padding-top: 50px;
     background: linear-gradient(90deg, var(--light-blue), white 30%, white 74%, var(--bitcoin-light-orange));
     padding: 50px 0;
@@ -572,30 +521,20 @@ footer a {
     margin-right: 10px;
 }
 
-.stats {
-
-}
-
 /*  */
 /*  */
 /* Latest Fiat */
-
-.view-height {
-    /* height: calc(100vh - 145px); */
-}
 
 .construction-img-div {
     margin-top: 145px;
     text-align: center;
     height: 1vdh;
-    /* width: 100%; */
 }
 
 .construction-div {
     width: 60%;
     border-radius: 20px;
     margin-top: 50px;
-    /* margin-bottom: 50px; */
 }
 
 .construction-text {
@@ -617,9 +556,6 @@ footer a {
     display: none;
 }
 
-.fiat-footer {
-}
-
 /*  */
 /*  */
 /* Pricing Page */
@@ -629,7 +565,6 @@ footer a {
     padding: 5px;
     text-align: center;
     background: radial-gradient(var(--light-blue) 30%, white);
-    /* background: linear-gradient(white 30%, var(--bitcoin-light-orange)); */
 }
 
 .indent {
@@ -637,7 +572,6 @@ footer a {
     box-shadow: inset 0px 0px 10px var(--bitcoin-gray);
     border-radius: 50px;
     background-color: white;
-    /* border: 5px solid black; */
 }
 
 h6 {
@@ -649,9 +583,7 @@ h6 {
     padding-top: 60px;
     font-weight: bold;
     font-size: 60px;
-    /* letter-spacing: 3px; */
     word-spacing: 8px;
-    /* text-decoration: underline; */
     color: var(--bitcoin-gray);
 }
 
@@ -660,7 +592,6 @@ h6 {
 }
 
 .tier {
-    /* margin: 45px; */
     padding: 3% 2%;
     min-height: 600px;
     border-radius: 50px;
@@ -699,7 +630,6 @@ h6 {
     padding-right: 10%;
     padding-left: 10%;
     text-align: center;
-    /* background-color: var(--bitcoin-light-orange); */
     min-height: 100px !important;
 }
 
@@ -731,9 +661,6 @@ h6 {
     font-size: 20px;
 }
 
-.profile-img-div {
-    /* width: 45%; */
-}
 .profile-img {
     width: 100%;
     border-radius: 50%;
@@ -754,18 +681,18 @@ h6 {
     100% {
       transform: rotate(360deg);
     }
-  }
+}
   
-  .cog {
+.cog {
     width: 15%;
     transition: transform 0.5s ease-in-out;
-  }
+}
   
-  .cog:hover {
+.cog:hover {
     animation: rotateTwice 5s linear;
     cursor: pointer;
-  }
-  /* End Cog Rotation */
+}
+/* End Cog Rotation */
 
 .profile-paragraph > p {
     display: block
