@@ -56,7 +56,6 @@ h6 {
     height: 65%;
     width: 75%;
     margin-top: 70px;
-    /* border: 5px solid black; */
     box-shadow: 0 0 30px var(--bitcoin-light-orange);
     border-radius: 30px;
     background: var(--bitcoin-orange);
@@ -422,7 +421,6 @@ footer a {
 /* Latest Crypto HTML */
 
 .crypto-header {
-    /* border: 1px solid black; */
     min-height: 200px !important;
     padding-top: 70px;
     text-align: center;
@@ -762,12 +760,8 @@ h6 {
 }
 
 .graph-invested {
-    /* margin-top: 50px; */
     box-shadow: inset 0 10px 10px -10px var(--bitcoin-gray);
-    /* background: radial-gradient(var(--light-blue) , white 85%); */
-    /* background: var(--light-blue); */
     background: linear-gradient(135deg,  white 21%, white 89%, var(--bitcoin-orange) 99%);
-    /* background: rgb(231, 223, 217); */
     padding: 5px;
 }
 
@@ -781,11 +775,7 @@ h6 {
 }
 
 .profile-graph {
-    /* height: 425px; */
-    /* width: 470px; */
     border-bottom: 1px solid var(--bitcoin-gray);
-    /* margin-bottom: 5px; */
-    /* border-radius: 10px;    */
 }
 
 .profile-graph .graph {
@@ -795,7 +785,6 @@ h6 {
 .graph-text {
     font-size: 22px;
     padding-top: 16px;
-    /* color: var(--bitcoin-orange); */
 }
 
 .invested-crypto h2 {
@@ -806,7 +795,6 @@ h6 {
 
 .invested {
     height: 175px;
-    /* width: 938px; */
     border-radius: 10px;
     border: 1px solid var(--bitcoin-gray);
     box-shadow:inset 0 0 6px var(--bitcoin-gray);
@@ -827,7 +815,6 @@ h6 {
 .terms-page {
     margin-top: 145px;
     text-align: center;
-    /* background: var(--bitcoin-light-orange); */
 }
 
 .terms-sect {
@@ -910,7 +897,6 @@ h6 {
     }
 
     .navbar-nav {
-        /* display: block; */
         justify-content: center;
     }
 
@@ -920,7 +906,6 @@ h6 {
     }
 
     .collapse {
-        /* background: radial-gradient(var(--bitcoin-light-orange), white 60%); */
         background: linear-gradient(white, var(--bitcoin-light-orange));
         border-right: 1px solid black;
         border-bottom: 1px solid black;
@@ -1033,10 +1018,7 @@ h6 {
     }
 
     .invested {
-        /* display: flex; */
-        /* align-items: center; */
         font-size: 0.7rem !important;
-        /* height: auto; */
     }
 
     .coin-img {
@@ -1113,7 +1095,6 @@ h6 {
     }
 
     .indent > h6 {
-            /* font-size: 20px; */
         margin: 1%;
     }
 
@@ -1141,8 +1122,6 @@ h6 {
     }
 
     .invested {
-        /* height: auto; */
-        /* font-size: 0.3rem !important; */
         height: auto;
         text-align: center;
     }
@@ -1166,7 +1145,6 @@ h6 {
 
 @media (max-width: 313px) {
     .navbar-brand {
-        /* width: 100%; */
         margin: auto;
     }
 
