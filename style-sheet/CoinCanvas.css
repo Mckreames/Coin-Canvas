@@ -438,6 +438,10 @@ label {
     font-weight: bold;
 }
 
+.terms-link {
+    color: var(--bitcoin-gray)
+}
+
 footer {
     min-height: 150px;
     padding: 20px 0;
@@ -1226,6 +1230,10 @@ h6 {
 @media (max-width: 395px) {
     .hero-header {
         font-size: 19px;
+    }
+
+    .gray {
+        font-size: 23px;
     }
 }
 
