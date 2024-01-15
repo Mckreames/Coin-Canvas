@@ -7,9 +7,7 @@
 //     event.preventDefault();
 //   });
 
-// Modal window functionality
-
-// Modal Window
+// Modal Window functionality
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnClosedModal = document.querySelector(".close-modal");
