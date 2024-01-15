@@ -527,9 +527,10 @@ footer a {
 /* Latest Fiat */
 
 .construction-img-div {
-    margin-top: 145px;
+    margin: 145px 0px 0px 0px;
     text-align: center;
     height: 1vdh;
+    padding: 0;
 }
 
 .construction-div {
@@ -695,6 +696,17 @@ h6 {
 }
 /* End Cog Rotation */
 
+@keyframes fadeFromAbove {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translat Y(0);
+    }
+}
+
 .profile-paragraph > p {
     display: block
 }
@@ -716,14 +728,12 @@ h6 {
 
 .green {
     color: green;
-}
-
-.red {
-    color: red;
+    animation: fadeFromAbove 1s ease-out;
 }
 
 .gray {
     color: var(--bitcoin-gray);
+    animation: fadeFromAbove 2s ease-out;
 }
 
 .bold {

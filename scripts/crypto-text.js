@@ -53,3 +53,4 @@ async function fetchData() {
 }
 
 // setInterval(fetchData, 1000);
+fetchData();
