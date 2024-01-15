@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Domine', serif;
-    scroll-behavior: smooth;
+:root {
     --bitcoin-orange: #f7931a;
     --bitcoin-light-orange: #ffc681;
     --bitcoin-gray: #4d4d4d;
@@ -11,6 +6,14 @@
     --electric-blue: #65def1;
     --yellow-green: #8ac926;
     --dogwood-rose: #d90368;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Domine', serif;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5 {
