@@ -16,6 +16,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    min-width: 300px;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: 'Merriweather', serif;
     color: var(--bitcoin-orange);
