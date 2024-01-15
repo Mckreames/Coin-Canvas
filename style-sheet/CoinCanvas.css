@@ -532,10 +532,11 @@ footer a {
     min-height: 400px;
     align-items: center;
     background: white;
+    transition: box-shadow 0.2s linear;
 }
 
 .crypto-list-div:hover {
-    box-shadow: inset 0px 0px 10px var(--bitcoin-orange);
+    box-shadow: inset 0px 0px 20px var(--bitcoin-orange);
 }
 
 .crypto-list {
