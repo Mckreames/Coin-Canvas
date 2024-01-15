@@ -4,12 +4,12 @@ Welcome to Coin Canvas, your go-to platform for exploring mock crypto currency t
 
 ## Functionaity
 
-- **Min Screen Width**: The minimum operational screen width for this site is
+- **Min Screen Width**: The minimum operational screen width for this site is 300px
 
 ## Features
 
-- **Live Price Charts**: View real-time charts of mock crypto and fiat currency trading prices.
-- **Profile Page**: Explore a prefabricated profile page showcasing your "investments" and other simulated data.
+- **Live Price Charts**: View real-time charts of crypto and fiat currency trading prices.
+- **Profile Page**: Explore a profile page showcasing your "investments" and other simulated data.
 - **Newsletter Signup**: Sign up for our non-existent newsletter to stay informed
 - **Educational Purpose**: This platform is designed for educational use only and does not handle real transactions.
 
@@ -27,7 +27,7 @@ Welcome to Coin Canvas, your go-to platform for exploring mock crypto currency t
 
 ### As a Registered User:
 
-- **Access Profile Page**: I want to access my prefabricated profile page to see my "investments."
+- **Access Profile Page**: I want to access my profile page to track my "Investments."
 - **Signup for Newsletter**: I want to sign up for the newsletter to receive updates.
 
 ### As a Developer:
@@ -37,4 +37,4 @@ Welcome to Coin Canvas, your go-to platform for exploring mock crypto currency t
 
 ## Terms of Service
 
-Please read our terms of service for important information about the educational nature of this website, the prefabricated profile page, the non-existent newsletter, and more.
+Please read our terms of service for important information about the educational nature of this website.

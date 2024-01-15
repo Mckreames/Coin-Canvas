@@ -52,4 +52,4 @@ async function fetchData() {
     .catch((error) => console.error("Fetch Error", error));
 }
 
-// fetchData();
+// setInterval(fetchData, 1000);
