@@ -105,7 +105,7 @@ function updateSuggestions(query) {
     suggestionList.append(
       `<a class="list-group-item suggestion-item" href="#${filteredSuggestions[i].id}"><li>${filteredSuggestions[i].name}</li></a>`
     );
-    console.log(filteredSuggestions[i].id);
+    // console.log(filteredSuggestions[i].id);
   }
 
   document

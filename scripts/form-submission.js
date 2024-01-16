@@ -13,11 +13,11 @@ const overlay = document.querySelector(".overlay");
 const btnClosedModal = document.querySelector(".close-modal");
 const btnsOpenModal = document.querySelectorAll(".show-modal");
 const exit = document.querySelector(".exit");
-console.log(btnsOpenModal);
+// console.log(btnsOpenModal);
 
 // Open Modal
 const openModal = function () {
-  console.log("open Modal called");
+  // console.log("open Modal called");
   modal.classList.remove(`hidden`);
   modal.classList.add(`d-flex`);
   overlay.classList.remove(`hidden`);
@@ -26,7 +26,7 @@ const openModal = function () {
 
 // Close Modal
 const closeModal = function () {
-  console.log("close Modal called");
+  // console.log("close Modal called");
   modal.classList.remove(`d-flex`);
   modal.classList.add(`hidden`);
   overlay.classList.add(`hidden`);
@@ -43,7 +43,7 @@ overlay.addEventListener(`click`, closeModal);
 exit.addEventListener(`click`, closeModal);
 
 document.addEventListener(`keydown`, function (e) {
-  console.log(e.key);
+  // console.log(e.key);
 
   if (e.key === `Escape` && !modal.classList.contains(`hidden`)) {
     closeModal();

@@ -16,7 +16,7 @@ async function fetchData() {
     .then((response) => response.json())
     .then((data) => {
       const cryptoData = data;
-      console.log(cryptoData);
+      // console.log(cryptoData);
 
       if (cryptoData.rates) {
         // Iterate through each crypto div
